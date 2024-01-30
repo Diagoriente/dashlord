@@ -542,14 +542,14 @@
               "ip"           : "diagoriente.beta.gouv.fr/162.19.23.159",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "diagoriente.beta.gouv.fr/162.19.23.159",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1706650656"
+              "finding"      : "1706656552"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "diagoriente.beta.gouv.fr/162.19.23.159",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "81"
+              "finding"      : "82"
           }
 ]
