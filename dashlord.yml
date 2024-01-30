@@ -1,6 +1,10 @@
 title: DashLord Diagoriente
 description: Bonnes pratiques techniques
-entity: Ministère du Travail, de la Santé et des Solidarités
+entity: | 
+  Ministère
+  du Travail,
+  de la Santé
+  et des Solidarités
 footer: Powered by SocialGouv
 marianne: true
 tools:
@@ -27,5 +31,11 @@ tools:
 urls:
   - url: https://diagoriente.beta.gouv.fr
   - url: https://plateforme.diagoriente.beta.gouv.fr
+    tools:
+      dsfr: false
   - url: https://app.diagoriente.beta.gouv.fr
+    tools:
+      dsfr: false
   - url: https://web-app.diagoriente.beta.gouv.fr
+    tools:
+      dsfr: false
