@@ -1,0 +1,29 @@
+title: DashLord Diagoriente
+description: Bonnes pratiques techniques
+entity: Ministère du Travail, de la Santé et des Solidarités
+footer: Powered by SocialGouv
+marianne: true
+tools:
+  404: true
+  screenshot: true
+  nmap: true
+  zap: true
+  wappalyzer: true
+  http: true
+  testssl: true
+  lighthouse: true
+  thirdparties: true
+  nuclei: true
+  updownio: true
+  dependabot: true
+  codescan: true
+  stats: true
+  declaration-a11y: true
+  ecoindex: true
+  dsfr: true
+  betagouv: false
+urls:
+  - url: https://diagoriente.beta.gouv.fr
+    title: Site web
+  - url: https://plateforme.diagoriente.beta.gouv.fr
+    title: Diagoriente Plateforme
