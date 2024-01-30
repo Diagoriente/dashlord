@@ -26,6 +26,6 @@ tools:
   betagouv: false
 urls:
   - url: https://diagoriente.beta.gouv.fr
-    title: Site web
   - url: https://plateforme.diagoriente.beta.gouv.fr
-    title: Diagoriente Plateforme
+  - url: https://app.diagoriente.beta.gouv.fr
+  - url: https://web-app.diagoriente.beta.gouv.fr

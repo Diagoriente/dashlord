@@ -252,7 +252,7 @@ jobs:
 
       - name: Nuclei scan
         if: ${{ matrix.sites.tools.nuclei }}
-        timeout-minutes: 10
+        timeout-minutes: 45
         continue-on-error: true
         uses: "SocialGouv/dashlord-nuclei-action@master"
         with:
