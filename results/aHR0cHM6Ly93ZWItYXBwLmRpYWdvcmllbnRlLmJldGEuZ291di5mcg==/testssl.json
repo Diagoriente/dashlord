@@ -577,7 +577,7 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1706651020"
+              "finding"      : "1706655251"
           }
 ,         {
               "id"           : "HSTS",
@@ -1163,6 +1163,6 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "110"
+              "finding"      : "145"
           }
 ]

@@ -80,7 +80,7 @@
 "intermediate_cert_badOCSP","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","OK","intermediate certificate(s) is/are ok","",""
 "HTTP_status_code","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","200 OK ('/')","",""
 "HTTP_clock_skew","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","0 seconds from localtime","",""
-"HTTP_headerTime","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","1706651020","",""
+"HTTP_headerTime","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","1706655251","",""
 "HSTS","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","LOW","not offered","",""
 "HPKP","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","No support for HTTP Public Key Pinning","",""
 "banner_server","web-app.diagoriente.beta.gouv.fr/135.125.83.158","443","INFO","No Server banner line in header, interesting!","",""
