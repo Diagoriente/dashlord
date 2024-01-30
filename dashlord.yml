@@ -20,6 +20,8 @@ tools:
   stats: true
   declaration-a11y: true
   ecoindex: true
+  declaration-rgpd: true
+  budget_page: false
   dsfr: true
   betagouv: false
 urls:
