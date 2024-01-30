@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Tue, 30 Jan 2024 20:37:57",
+	"@generated": "Tue, 30 Jan 2024 21:36:38",
 	"site":[ 
 		{
 			"@name": "https://diagoriente.beta.gouv.fr",
@@ -36,14 +36,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "",
@@ -68,22 +60,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
@@ -92,7 +68,31 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form class=\"w-full\" noValidate=\"\" action=\"\" encType=\"multipart/form-data\" method=\"POST\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"$ACTION_1:0\" \"$ACTION_1:1\" \"$ACTION_KEY\" \"$ACTION_REF_1\" \"newsletter-email\" ]."
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -114,7 +114,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10038",
@@ -143,22 +143,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "",
@@ -175,15 +159,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
+							"uri": "https://diagoriente.beta.gouv.fr/innovation/laboratoire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -199,7 +175,31 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -221,7 +221,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -298,6 +298,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/innovation/laboratoire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/small_laurene_houtin_f3973f045c.jpeg\"/>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
@@ -336,15 +344,39 @@
 							"attack": "",
 							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Scolaire_32d89a4e33.svg\"/>",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/communs_num_4f60227cf3.png\"/>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/metier_davenir_b1568bf258.png\"/>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/moteur_recherche_b264f673ec.png\"/>",
+							"otherinfo": ""
 						}
 					],
-					"count": "13",
+					"count": "17",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "130"
+					"sourceid": "145"
 				},
 				{
 					"pluginid": "10063",
@@ -373,22 +405,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "",
@@ -405,15 +421,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
+							"uri": "https://diagoriente.beta.gouv.fr/innovation/laboratoire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -429,7 +437,31 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -451,7 +483,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10037",
@@ -473,14 +505,6 @@
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -512,22 +536,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
@@ -536,7 +544,31 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -587,22 +619,6 @@
 							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "net/TEAM_Pascal_Chaumette_dfeb8eeb33",
-							"otherinfo": "\uFFFD\uFFFDL@\\x000c\uFFFD\uFFFD\uFFFDq\uFFFD\n\\x0016\uFFFD\uFFFD\uFFFDm{\uFFFD_y\uFFFD\\x001ey\uFFFD\uFFFD"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "net/NL_0124_Visuels_NL_0123_Etudiant_1503d47849",
-							"otherinfo": "\uFFFD\uFFFD4\uFFFD\uFFFD\uFFFDn?V+.z[?4\uFFFD\uFFFD\uFFFDm\uFFFD\\x0012\u06DD\uFFFD\uFFFD\uFFFD\uFFFD^t\uFFFD\uFFFD;\uFFFD"
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "",
@@ -619,15 +635,7 @@
 							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr-header-quick-access-item--Contact-0",
-							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
+							"uri": "https://diagoriente.beta.gouv.fr/innovation/laboratoire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -643,7 +651,31 @@
 							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr-header-quick-access-item--Contact-0",
+							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr-header-quick-access-item--Contact-0",
+							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr-header-quick-access-item--Contact-0",
+							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -772,7 +804,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "420"
+					"sourceid": "422"
 				},
 				{
 					"pluginid": "10109",
@@ -790,14 +822,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Qui sommes-nous ?</a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Blog</a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -833,19 +857,11 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
+							"uri": "https://diagoriente.beta.gouv.fr/partenaires",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Statistiques et impact</a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Lyc\u00E9es professionnels</a>",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Partenaires</a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -857,6 +873,22 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Diagoriente Analytics</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Diagoriente Coll\u00E8ge</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
 							"method": "GET",
 							"param": "",
@@ -865,11 +897,11 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/ressources",
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Ressources p\u00E9dagogiques</a>",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Diagoriente Pro</a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -887,7 +919,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "130"
+					"sourceid": "145"
 				},
 				{
 					"pluginid": "10015",
@@ -932,22 +964,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "s-maxage=300, stale-while-revalidate",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "s-maxage=300, stale-while-revalidate",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "cache-control",
@@ -957,6 +973,22 @@
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/services",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "s-maxage=300, stale-while-revalidate",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "s-maxage=300, stale-while-revalidate",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/college",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -994,7 +1026,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -1037,7 +1069,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1099,25 +1131,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1166,7 +1182,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1195,14 +1211,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/a-propos",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=300",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "",
@@ -1219,23 +1227,31 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/statistiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=300",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/offres/lycees-professionnels",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=300",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://diagoriente.beta.gouv.fr/services",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=300",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=300",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=300",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1329,6 +1345,30 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
+							"method": "POST",
+							"param": "$ACTION_1:0",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/contact\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:0={\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}\n\nThe user-controlled value was:\n{\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}"
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
+							"method": "POST",
+							"param": "$ACTION_1:1",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/contact\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:1=[{\"status\":\"$undefined\",\"message\":\"\"}]\n\nThe user-controlled value was:\n[{\"status\":\"$undefined\",\"message\":\"\"}]"
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
+							"method": "POST",
+							"param": "$ACTION_KEY",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/contact\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
 							"method": "POST",
 							"param": "$ACTION_1:0",
@@ -1375,30 +1415,6 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/services\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
-							"method": "POST",
-							"param": "$ACTION_1:0",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/sitemap\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:0={\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}\n\nThe user-controlled value was:\n{\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
-							"method": "POST",
-							"param": "$ACTION_1:1",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/sitemap\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:1=[{\"status\":\"$undefined\",\"message\":\"\"}]\n\nThe user-controlled value was:\n[{\"status\":\"$undefined\",\"message\":\"\"}]"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
-							"method": "POST",
-							"param": "$ACTION_KEY",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/sitemap\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
 						}
 					],
 					"count": "12",
@@ -1407,7 +1423,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "436"
+					"sourceid": "441"
 				}
 			]
 		}
