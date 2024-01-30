@@ -18,7 +18,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1706649732747&ver=1.100.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1706653527882&ver=1.100.0"
     },
     {
       "type": "unknown",
@@ -46,11 +46,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2F&response_type=code&scope=openid&state=39243cb31d524eeeb0120a04d19d8187&code_challenge=f1qak8uHa06JH523Sf8ohP9SAX5frYHaEeQviS4HDAU&code_challenge_method=S256&response_mode=query"
+      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2F&response_type=code&scope=openid&state=d76a651d547440cda6fdbd8bed7d4259&code_challenge=unmGbtGh2ZHn3beiAurlmS46cWFJZhDsglJDVN2UfwA&code_challenge_method=S256&response_mode=query"
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/e/?compression=gzip-js&ip=1&_=1706649733372&ver=1.100.0"
+      "url": "https://eu.posthog.com/e/?compression=gzip-js&ip=1&_=1706653529047&ver=1.100.0"
+    },
+    {
+      "type": "unknown",
+      "url": "https://sentry.diagomonito.net/api/12/envelope/?sentry_key=3eebe7ba9e674334926f489a263396ad&sentry_version=7&sentry_client=sentry.javascript.react%2F7.88.0"
     },
     {
       "type": "unknown",
@@ -120,7 +124,7 @@
     "content-encoding": "gzip",
     "content-length": "625",
     "content-type": "text/html",
-    "date": "Tue, 30 Jan 2024 21:22:12 GMT",
+    "date": "Tue, 30 Jan 2024 22:25:26 GMT",
     "etag": "\"65b902de-271\"",
     "last-modified": "Tue, 30 Jan 2024 14:08:30 GMT",
     "server": "nginx",
@@ -189,14 +193,8 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.167.95",
+      "ip": "142.250.189.202",
       "geoip": {
-        "city": {
-          "geoname_id": 5116931,
-          "names": {
-            "en": "Farmingdale"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -226,14 +224,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 40.7306,
-          "longitude": -73.4313,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11735"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -248,23 +242,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     },
     {
@@ -345,8 +323,14 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.251.32.35",
       "geoip": {
+        "city": {
+          "geoname_id": 5133273,
+          "names": {
+            "en": "Queens"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -376,10 +360,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.66,
+          "longitude": -73.839,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11414"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -394,7 +382,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {

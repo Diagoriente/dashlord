@@ -549,7 +549,7 @@
               "ip"           : "plateforme.diagoriente.beta.gouv.fr/162.19.23.159",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1706649946"
+              "finding"      : "1706653827"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "plateforme.diagoriente.beta.gouv.fr/162.19.23.159",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "82"
+              "finding"      : "127"
           }
 ]
