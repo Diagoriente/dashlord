@@ -60,7 +60,6 @@
       }
     ],
     "url": "https://diagoriente.beta.gouv.fr",
-    "title": "Site web",
     "http": {
       "url": "https://diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
@@ -2078,7 +2077,6 @@
   {
     "404": [],
     "url": "https://plateforme.diagoriente.beta.gouv.fr",
-    "title": "Diagoriente Plateforme",
     "http": {
       "url": "https://plateforme.diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
