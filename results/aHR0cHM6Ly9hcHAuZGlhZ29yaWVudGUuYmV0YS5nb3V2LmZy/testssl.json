@@ -346,7 +346,7 @@
               "ip"           : "app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "51 >= 30 days"
+              "finding"      : "47 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1706653821"
+              "finding"      : "1707009313"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -613,6 +613,13 @@
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "nosniff"
+          }
+,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "app.diagoriente.beta.gouv.fr/135.125.83.158",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self'; img-src * data:;frame-ancestors 'self'; frame-src 'self' https://diagoriente.beta.gouv.fr; style-src 'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; style-src-elem  'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; script-src 'unsafe-inline' 'self'; connect-src 'self' *.diagoriente.beta.gouv.fr https://sentry.diagomonito.net/"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1126,6 +1133,6 @@
               "ip"           : "app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "127"
+              "finding"      : "87"
           }
 ]
