@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Tue, 30 Jan 2024 22:52:38",
+	"@generated": "Sun, 4 Feb 2024 01:28:06",
 	"site":[ 
 		{
 			"@name": "https://web-app.diagoriente.beta.gouv.fr",
@@ -109,7 +109,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10017",
@@ -144,7 +144,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10110",
@@ -251,14 +251,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://web-app.diagoriente.beta.gouv.fr/apple-touch-icon.png",
 							"method": "GET",
 							"param": "",
@@ -329,6 +321,14 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/static/js/main.a1a1139c.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -337,7 +337,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -358,14 +358,6 @@
 							"otherinfo": "1706178512, which evaluates to: 2024-01-25 10:28:32"
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "X-Timestamp",
-							"attack": "",
-							"evidence": "1706178512",
-							"otherinfo": "1706178512, which evaluates to: 2024-01-25 10:28:32"
-						},
-						{
 							"uri": "https://web-app.diagoriente.beta.gouv.fr/apple-touch-icon.png",
 							"method": "GET",
 							"param": "X-Timestamp",
@@ -436,6 +428,14 @@
 							"attack": "",
 							"evidence": "1706178504",
 							"otherinfo": "1706178504, which evaluates to: 2024-01-25 10:28:24"
+						},
+						{
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/static/js/main.a1a1139c.js",
+							"method": "GET",
+							"param": "X-Timestamp",
+							"attack": "",
+							"evidence": "1706178507",
+							"otherinfo": "1706178507, which evaluates to: 2024-01-25 10:28:27"
 						}
 					],
 					"count": "11",
@@ -444,7 +444,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -586,7 +586,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "21"
+					"sourceid": "19"
 				},
 				{
 					"pluginid": "10027",
@@ -667,17 +667,9 @@
 							"attack": "",
 							"evidence": "no-store",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -710,7 +702,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "18"
+					"sourceid": "21"
 				},
 				{
 					"pluginid": "90005",
@@ -739,7 +731,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/sitemap.xml",
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -782,7 +774,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/sitemap.xml",
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -825,7 +817,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/sitemap.xml",
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -868,7 +860,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://web-app.diagoriente.beta.gouv.fr/sitemap.xml",
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -965,9 +957,17 @@
 							"attack": "",
 							"evidence": "max-age=86400",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://web-app.diagoriente.beta.gouv.fr/static/js/main.a1a1139c.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
