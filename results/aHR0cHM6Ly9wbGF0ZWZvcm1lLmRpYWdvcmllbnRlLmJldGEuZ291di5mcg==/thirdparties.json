@@ -18,7 +18,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1706653527882&ver=1.100.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1707008958260&ver=1.100.0"
     },
     {
       "type": "unknown",
@@ -46,15 +46,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2F&response_type=code&scope=openid&state=d76a651d547440cda6fdbd8bed7d4259&code_challenge=unmGbtGh2ZHn3beiAurlmS46cWFJZhDsglJDVN2UfwA&code_challenge_method=S256&response_mode=query"
+      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2F&response_type=code&scope=openid&state=743526af126e4bcdac4d51d2a879fa05&code_challenge=EU7IwOzaZs5flbFnb6oCUkKVpYbxe4hlWAqaRLhG4uA&code_challenge_method=S256&response_mode=query"
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/e/?compression=gzip-js&ip=1&_=1706653529047&ver=1.100.0"
-    },
-    {
-      "type": "unknown",
-      "url": "https://sentry.diagomonito.net/api/12/envelope/?sentry_key=3eebe7ba9e674334926f489a263396ad&sentry_version=7&sentry_client=sentry.javascript.react%2F7.88.0"
+      "url": "https://eu.posthog.com/e/?compression=gzip-js&ip=1&_=1707008958964&ver=1.100.0"
     },
     {
       "type": "unknown",
@@ -124,7 +120,7 @@
     "content-encoding": "gzip",
     "content-length": "625",
     "content-type": "text/html",
-    "date": "Tue, 30 Jan 2024 22:25:26 GMT",
+    "date": "Sun, 04 Feb 2024 01:09:17 GMT",
     "etag": "\"65b902de-271\"",
     "last-modified": "Tue, 30 Jan 2024 14:08:30 GMT",
     "server": "nginx",
@@ -193,8 +189,15 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.189.202",
+      "ip": "142.250.31.95",
       "geoip": {
+        "city": {
+          "geoname_id": 4364745,
+          "names": {
+            "en": "Oxford",
+            "ru": "Оксфорд"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -225,9 +228,13 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 38.6828,
+          "longitude": -76.1563,
+          "metro_code": 512,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "21654"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -242,7 +249,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4361885,
+            "iso_code": "MD",
+            "names": {
+              "de": "Maryland",
+              "en": "Maryland",
+              "es": "Maryland",
+              "fr": "Maryland",
+              "ja": "メリーランド州",
+              "pt-BR": "Maryland",
+              "ru": "Мэриленд",
+              "zh-CN": "马里兰州"
+            }
+          }
+        ]
       }
     },
     {
@@ -323,12 +346,12 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.32.35",
+      "ip": "142.251.167.94",
       "geoip": {
         "city": {
-          "geoname_id": 5133273,
+          "geoname_id": 5116931,
           "names": {
-            "en": "Queens"
+            "en": "Farmingdale"
           }
         },
         "continent": {
@@ -361,13 +384,13 @@
         },
         "location": {
           "accuracy_radius": 500,
-          "latitude": 40.66,
-          "longitude": -73.839,
+          "latitude": 40.7306,
+          "longitude": -73.4313,
           "metro_code": 501,
           "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "11414"
+          "code": "11735"
         },
         "registered_country": {
           "geoname_id": 6252001,
