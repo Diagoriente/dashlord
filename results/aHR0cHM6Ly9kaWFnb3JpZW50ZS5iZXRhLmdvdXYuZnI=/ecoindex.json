@@ -3,15 +3,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://diagoriente.beta.gouv.fr",
-        "size": 1706.418,
-        "nodes": 554,
-        "requests": 65,
+        "size": 2036.597,
+        "nodes": 570,
+        "requests": 81,
         "grade": "D",
-        "score": 54.0,
-        "ges": 1.92,
-        "water": 2.88,
+        "score": 48.0,
+        "ges": 2.04,
+        "water": 3.06,
         "ecoindex_version": "5.4.2",
-        "date": "2024-01-30 22:26:38.074453",
+        "date": "2024-02-05 18:11:55.855871",
         "page_type": "website"
     }
 ]

@@ -2,16 +2,16 @@
   "trackers": [
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1706653542990&ver=1.103.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1707156662357&ver=1.103.0"
     }
   ],
   "cookies": [
     {
       "name": "ph_phc_NRQNiei0cV6m0UuVNyOnYRj4WHMaGIvCPxah2CBnYFp_posthog",
-      "value": "%7B%22distinct_id%22%3A%22018d5c7a-6a4d-70c5-baf9-715be9617a18%22%7D",
+      "value": "%7B%22distinct_id%22%3A%22018d7a77-6854-7b3b-8762-739ac1c1bad7%22%7D",
       "domain": ".beta.gouv.fr",
       "path": "/",
-      "expires": 1738189542,
+      "expires": 1738692662,
       "size": 126,
       "httpOnly": false,
       "secure": true,
@@ -25,14 +25,15 @@
   "headers": {
     "cache-control": "s-maxage=300, stale-while-revalidate",
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
     "content-type": "text/html; charset=utf-8",
-    "date": "Tue, 30 Jan 2024 22:25:41 GMT",
-    "etag": "\"kdzet6h9w11xgc\"",
+    "date": "Mon, 05 Feb 2024 18:11:01 GMT",
+    "etag": "\"17owyr58v1ymg\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding\nRSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-nextjs-cache": "HIT",
+    "x-nextjs-cache": "MISS",
     "x-powered-by": "Next.js",
     "x-xss-protection": "1; mode=block"
   },
@@ -95,8 +96,42 @@
     },
     {
       "hostname": "eu.posthog.com",
-      "ip": "104.22.59.181",
+      "ip": "172.67.40.50",
       "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
