@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Mon, 5 Feb 2024 18:14:09",
+	"@generated": "Sat, 10 Feb 2024 00:15:12",
 	"site":[ 
 		{
 			"@name": "https://plateforme.diagoriente.beta.gouv.fr",
@@ -28,14 +28,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -52,13 +44,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -91,6 +83,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link rel=\"author\" href=\"https://diagoriente.beta.gouv.fr\">",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />",
 							"otherinfo": ""
 						},
@@ -123,6 +123,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link rel=\"author\" href=\"https://diagoriente.beta.gouv.fr\">",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />",
 							"otherinfo": ""
 						},
@@ -155,6 +163,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link rel=\"author\" href=\"https://diagoriente.beta.gouv.fr\">",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />",
 							"otherinfo": ""
 						},
@@ -167,13 +183,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "15",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10110",
@@ -186,7 +202,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -200,7 +216,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "25"
+					"sourceid": "23"
 				},
 				{
 					"pluginid": "10063",
@@ -221,15 +237,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -253,13 +261,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -272,7 +280,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -294,7 +302,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "25"
+					"sourceid": "23"
 				},
 				{
 					"pluginid": "10027",
@@ -307,7 +315,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -315,7 +323,7 @@
 							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"`)).length,ks=0;ks<Cs;ks++){var to=Tr.charCodeAt(ks),ro=null;to<128?Qr++:ro=to>127&&to<2048?String.fromCharCode(to>>6|192,63&to|\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -323,7 +331,7 @@
 							"otherinfo": "The following pattern was used: \\bDB\\b and was detected 4 times, the first in the element starting with: \"`+ks[to].replace(\" at new \",\" at \");return Tr.displayName&&no.includes(\"<anonymous>\")&&(no=no.replace(\"<anonymous>\",Tr.displayNa\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -331,7 +339,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 3 times, the first in the element starting with: \"The transaction will not be sampled. Please use the ${ks} instrumentation to start transactions.`),Tr.sampled=!1);let to=new Tra\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -339,7 +347,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 9 times, the first in the element starting with: \" */function _extends$5(){return _extends$5=Object.assign?Object.assign.bind():function(Tr){for(var Jr=1;Jr<arguments.length;Jr++\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -347,7 +355,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 3 times, the first in the element starting with: \" */function _extends$3(){return _extends$3=Object.assign?Object.assign.bind():function(Tr){for(var Jr=1;Jr<arguments.length;Jr++\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -355,15 +363,15 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 5 times, the first in the element starting with: \"*/var Vy=[\"input:not([inert])\",\"select:not([inert])\",\"textarea:not([inert])\",\"a[href]:not([inert])\",\"button:not([inert])\",\"[tabi\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "todo",
-							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected in the element starting with: \" */const DS={accessibility:()=>__vitePreload(()=>import(\"./accessibility-acdae022-wtBtkDp9.js\"),__vite__mapDeps([])),\"activity-s\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected in the element starting with: \" */const DS={accessibility:()=>__vitePreload(()=>import(\"./accessibility-acdae022-HPuaLNUM.js\"),__vite__mapDeps([])),\"activity-s\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -377,7 +385,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "25"
+					"sourceid": "23"
 				},
 				{
 					"pluginid": "10109",
@@ -394,15 +402,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WaEPxFaL.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WaEPxFaL.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lJrLxOvx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -410,7 +410,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WaEPxFaL.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lJrLxOvx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -418,17 +418,17 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WaEPxFaL.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lJrLxOvx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -449,14 +449,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "cache-control",
@@ -473,13 +465,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -508,14 +500,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/site.webmanifest",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -524,7 +508,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -559,14 +543,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/site.webmanifest",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -575,7 +551,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -610,14 +586,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/site.webmanifest",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -626,7 +594,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -661,14 +629,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/site.webmanifest",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -677,7 +637,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -704,7 +664,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-RYhfVmZO.css",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-1if_XWEd.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -712,7 +672,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-WaEPxFaL.js",
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-lJrLxOvx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -777,33 +737,9 @@
 							"attack": "",
 							"evidence": "no-cache",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://plateforme.diagoriente.beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "1",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
