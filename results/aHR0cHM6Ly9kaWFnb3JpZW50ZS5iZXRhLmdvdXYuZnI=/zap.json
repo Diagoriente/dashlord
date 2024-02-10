@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Mon, 5 Feb 2024 18:14:36",
+	"@generated": "Sat, 10 Feb 2024 00:17:03",
 	"site":[ 
 		{
 			"@name": "https://diagoriente.beta.gouv.fr",
@@ -114,7 +114,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10055",
@@ -143,7 +143,7 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -157,7 +157,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10055",
@@ -186,7 +186,7 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -200,7 +200,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10055",
@@ -229,7 +229,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/contact",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -243,7 +243,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -260,6 +260,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Article_Etudiant_24eef24a3f.png\"/>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png\"/>",
 							"otherinfo": ""
 						},
@@ -268,7 +276,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/NL_0124_Visuels_NL_0123_Etudiant_1503d47849.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/NL_0124_Visuels_NL_0123_Etudiant_635c0498d3.png\"/>",
 							"otherinfo": ""
 						},
 						{
@@ -284,23 +292,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/acticle_octobrerose_5277602704.jpeg\"/>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/alternance_3dafede81f.jpeg\"/>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/article_penibilite_d1894f3f50.png\"/>",
 							"otherinfo": ""
 						},
 						{
@@ -360,13 +352,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "116"
+					"sourceid": "122"
 				},
 				{
 					"pluginid": "10063",
@@ -427,7 +419,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -435,7 +427,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
+							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -534,7 +526,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -542,7 +534,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
+							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -580,7 +572,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -613,8 +605,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "net/NL_0124_Visuels_NL_0123_Etudiant_1503d47849",
-							"otherinfo": "\uFFFD\uFFFD4\uFFFD\uFFFD\uFFFDn?V+.z[?4\uFFFD\uFFFD\uFFFDm\uFFFD\\x0012\u06DD\uFFFD\uFFFD\uFFFD\uFFFD^t\uFFFD\uFFFD;\uFFFD"
+							"evidence": "net/BANNER_Infolettre_9b733ff48d",
+							"otherinfo": "\uFFFD\uFFFD\\x0004\\x0003M\\x0011\\x001f\u021D\uFFFD%z\uFFFDk{\uFFFD[\uFFFD}\uFFFD\uFFFD\\x001d"
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/contact",
@@ -641,20 +633,20 @@
 							"otherinfo": "\uFFFD\uFFFD\\x0004\\x0003M\\x0011\\x001f\uFFFDz\uFFFD\uFFFDq\uFFFD?\u06E6\uFFFD\uFFFDg\uFFFD\uFFFD"
 						},
 						{
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "net/BANNER_Analytics_702827e9e7",
+							"otherinfo": "\uFFFD\uFFFD\\x0004\\x0003M\\x0011\\x001f\uFFFD\uFFFD\uFFFDr\uFFFD',\uFFFD\uFFFD6\uFFFDn\uFFFD\uFFFD\uFFFD"
+						},
+						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "net/BANNER_Plateforme_d2a4a26cbe",
 							"otherinfo": "\uFFFD\uFFFD\\x0004\\x0003M\\x0011\\x001f\u03D5\uFFFD^~\uFFFD\uFFFD{\uFFFDvk\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr-header-quick-access-item--Contact-0",
-							"otherinfo": "~\uFFFD\uFFFDy\uFFFD^\uFFFD\uAB89\uFFFD>i\uFFFD\\x001e\uFFFD\u03E2\uFFFD\uFFFD\uFFFD*'\uFFFD\uFFFD-\uFFFD"
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/services/pro/ressources",
@@ -687,7 +679,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -700,20 +692,12 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/161-0037787a491e71c0.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[161],{650:function(e,t,n){n.r(t),n.d(t,{Accordion:function\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/343-7a0d1dbb2550ac4c.js",
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/136-0cc9dbb54020efd3.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[343],{2757:function(e,t,n){\"use strict\";n.d(t,{z:function(){return f}})\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[136],{4269:function(e,t,r){r.r(t),r.d(t,{Alert:function(){\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/362ffeb4-978910da9c71c0ea.js",
@@ -748,12 +732,28 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[604],{947:function(e,t,n){var r,l=n(8822),a=n(8741),o={usi\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/761-a158258196d6ddad.js",
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/761-83b4178df3c7d1e7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[761],{4013:function(r,i,e){e.r(i),e.d(i,{DynamicDSFRCardGr\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[761],{4013:function(r,e,i){i.r(e),i.d(e,{DynamicDSFRCardGr\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/791-90c69c96f5bd3e00.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[791],{9101:function(e,t,n){\"use strict\";n.d(t,{z:function(){return f}})\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/834-b1f19ce0cab562d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[834],{5485:function(e,t,n){n.r(t),n.d(t,{Accordion:functio\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/953-6e5fd2a276f73764.js",
@@ -764,12 +764,12 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[953],{953:function(e,t,n){Object.defineProperty(t,\"__esMod\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/app/contact/page-52e9d25d6707c7a1.js",
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/app/contact/page-7ec288887ab1bd8d.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[327],{2677:function(e,t,r){Promise.resolve().then(r.bind(r,6007)),Promi\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[327],{2677:function(e,t,r){Promise.resolve().then(r.bind(r,4946)),Promi\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
@@ -796,13 +796,13 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>self.__next_f.push([1,\"6:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"fr-container\\\",\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"id\\\":\\\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[161],{650:function(e,t,n){n.r(t),n.d(t,{Accordion:function\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[136],{4269:function(e,t,r){r.r(t),r.d(t,{Alert:function(){\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "246"
+					"sourceid": "265"
 				},
 				{
 					"pluginid": "10109",
@@ -839,11 +839,11 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/innovation/ressources",
+							"uri": "https://diagoriente.beta.gouv.fr/innovation/laboratoire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Ressources scientifiques</a>",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Laboratoire de recherche</a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -917,7 +917,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "116"
+					"sourceid": "122"
 				},
 				{
 					"pluginid": "10049",
@@ -952,7 +952,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "116"
+					"sourceid": "122"
 				},
 				{
 					"pluginid": "10015",
@@ -1013,7 +1013,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
+							"uri": "https://diagoriente.beta.gouv.fr/services/analytics",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1021,7 +1021,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro",
+							"uri": "https://diagoriente.beta.gouv.fr/services/plateforme",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1059,7 +1059,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1102,7 +1102,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1145,7 +1145,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1188,7 +1188,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1231,7 +1231,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "9"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1306,7 +1306,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "10049",
@@ -1353,14 +1353,6 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/ressources?category=1",
-							"method": "GET",
-							"param": "category",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/services/pro/ressources?category=1\n\nappears to include user input in: \n\na(n) [meta] tag [content] attribute \n\nThe user input found was:\ncategory=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1"
-						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/",
 							"method": "POST",
@@ -1410,28 +1402,28 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/contact\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
 							"method": "POST",
 							"param": "$ACTION_1:0",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/infolettre\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:0={\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}\n\nThe user-controlled value was:\n{\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/services/pro/se-former\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:0={\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}\n\nThe user-controlled value was:\n{\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}"
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
 							"method": "POST",
 							"param": "$ACTION_1:1",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/infolettre\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:1=[{\"status\":\"$undefined\",\"message\":\"\"}]\n\nThe user-controlled value was:\n[{\"status\":\"$undefined\",\"message\":\"\"}]"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/services/pro/se-former\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_1:1=[{\"status\":\"$undefined\",\"message\":\"\"}]\n\nThe user-controlled value was:\n[{\"status\":\"$undefined\",\"message\":\"\"}]"
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/infolettre",
+							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
 							"method": "POST",
 							"param": "$ACTION_KEY",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/infolettre\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k1593413325\n\nThe user-controlled value was:\nk1593413325"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/services/pro/se-former\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
 						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
@@ -1458,13 +1450,13 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://diagoriente.beta.gouv.fr/sitemap\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n$ACTION_KEY=k932489370\n\nThe user-controlled value was:\nk932489370"
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://diagoriente.beta.gouv.fr/services/pro/ressources?category=1</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>category=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://diagoriente.beta.gouv.fr/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>$ACTION_1:0={\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}</p><p></p><p>The user-controlled value was:</p><p>{\"id\":\"b1adc8301c026595d772be0de8261a26359cc654\",\"bound\":\"$@1\"}</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "263"
+					"sourceid": "268"
 				}
 			]
 		}
