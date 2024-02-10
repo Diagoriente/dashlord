@@ -297,7 +297,7 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0341590EA305C711E9BE62DFA445A6897A38"
+              "finding"      : "04B40571FB01EB84DC9A70EB54DF7E113B44"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -311,21 +311,21 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5D77B74639BE32C364408FBF28DDA89446046FAE"
+              "finding"      : "5F21B5F39EB0B26DCA0C8ACF1E8E7578EE811370"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "457AB3F3D8096BE8EF74AE2CF1EDE487B921196ACB91B77BC0A73FF9A49317A9"
+              "finding"      : "29C6802B3F300A9C1EC8544F3E1AB07A5177A497A182661D8572E2BA887B0E81"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIGejCCBWKgAwIBAgISA0FZDqMFxxHpvmLfpEWmiXo4MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzEyMTEwOTIwMzBaFw0yNDAzMTAwOTIwMjlaMCsxKTAnBgNVBAMTIHdlYi1hcHAuZGlhZ29yaWVudGUuYmV0YS5nb3V2LmZyMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAudd5TQYZ8aPjKH7vUHZN9q+bPhJsSDyerfJMjVaPKYGnIBId7ip+ze6zreh7SaM5Ok3+iVovI116LDfiMtwk9sMqVkmTafZaVqvZkWe1QNdy40jOWUD2j32Jl+pMlVss1x9Pzrep2Fv8oTyqYi1Ux4Skc0W9+oztWFULRiwq9xvuuDNBey30VDquiWMohmkU3SCzQD/FIEYsJ+smBaLHIPNYlPYY9RbrRgIsY3KlYQ6WP9KH3hlbDZbhtx7C3GMvAQB60zw0ZxuMHpnZa3tkR4mh6SWJtwvPi18yMM90blbcDQMsbpPFEo55h53lqXRoazQeJTfyoIRVsoVZvr+ITa9DkYzC3BvW76TVr477wrjkgwnu4VWjotXHlN4UjdWXuF/l9huvlH/5wmFhQ/RwqgLI9if6dX6KKxyZTMSNXEquZ9nXYV/Gqifq9gUODpiFt4BIM1lR8a7tBjv1hxVl22xoDO9hOsedPeapaIeacxpgp+sB3ZDqflxog0mkvXqr7Ri9+qb8YVj+pS1FCIKEWJtmazsvYOabLysgz8dEnqTvsSXXtiwl7zUfwB7Y9rixmVuHFzx3QdsReKelOkTo+wjxU1RbxD+2fUpIBNAYWjDR90F9cyMmPM0rZNjOnS+zb5d/o+PoqNjea4dOs8buAmD82/QQoKqVraPe5o8g+HkCAwEAAaOCAo8wggKLMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUgOtJeP4nVFsjSVb5c98cP/wYTLMwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wgZcGA1UdEQSBjzCBjIIdY2Q5My5kaWFnb3JpZW50ZS5iZXRhLmdvdXYuZnKCH2N2LjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnKCKG9yaWVudGF0aW9uLjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnKCIHdlYi1hcHAuZGlhZ29yaWVudGUuYmV0YS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAO1N3dT4tuYBOizBbBv5AO2fYT8P0x70ADS1yb+H61BcAAAGMWGSAKQAABAMARzBFAiEAxyFjWbCqEfZ6OhYw61PpNBry+wMCRwfGMnJIJj7zYx4CICbYBOh7bzlFe43rPzgjTUmIBdlg7j9kpCsJ0yMNoUysAHYAouK/1h7eLy8HoNZObTen3GVDsMa1LqLat4r4mm31F9gAAAGMWGSANgAABAMARzBFAiEA6KOH2qpYGZkJeBlEX1D2bv2OqavMkLT0DbdTZsYAuPsCIDhkPrtZftpx3dfaD4qgTibJkmf5SOc5vbz4SCUU5gljMA0GCSqGSIb3DQEBCwUAA4IBAQBjk4UvabzOH/CrgR9dZy0ix97Hkw4WXcWWE6Fi1hATPxJBLdjKNz7x2lxfkVpgFlZZMVaou1ya6md3kkoOYibMeypD9N6eVI4ZdfSmEPQ5KhlQ20qX/axkPKAdpD33HQ9g4lDaVFQbodhquH3QL7rGydPlkqISl3AWBEULCAVbqQlgySCnvIIlGiIfdEQSjsLwi8+fMXbRow/836OZUpFZgj96L51HYdJujhvBcoVUrrS47shJcpUsalo3b9j9nc//vKDGbyhbaPjD8lAlACHG25rJ/wLpK+tV/IX9DxfGTipUaeEQCYC9mfN9i4NfRIgmu2e/MAlqq4YpPpzI2oYs\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,7 +346,7 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cd93.diagoriente.beta.gouv.fr cv.1jeune1solution.beta.gouv.fr orientation.1jeune1solution.beta.gouv.fr web-app.diagoriente.beta.gouv.fr"
+              "finding"      : "cv.1jeune1solution.beta.gouv.fr orientation.1jeune1solution.beta.gouv.fr web-app.diagoriente.beta.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -374,21 +374,21 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "finding"      : "74 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-12-11 09:20"
+              "finding"      : "2024-01-25 10:33"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-03-10 09:20"
+              "finding"      : "2024-04-24 10:33"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -570,14 +570,14 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1707158112"
+              "finding"      : "1707525656"
           }
 ,         {
               "id"           : "HSTS",
@@ -757,7 +757,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=457AB3F3D8096BE8EF74AE2CF1EDE487B921196ACB91B77BC0A73FF9A49317A9"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=29C6802B3F300A9C1EC8544F3E1AB07A5177A497A182661D8572E2BA887B0E81"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1163,6 +1163,6 @@
               "ip"           : "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "83"
+              "finding"      : "113"
           }
 ]

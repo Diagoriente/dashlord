@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "web-app.diagoriente.beta.gouv.fr.",
       "matched-at": "web-app.diagoriente.beta.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 32802\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;web-app.diagoriente.beta.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 32802\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;web-app.diagoriente.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ndiagoriente.beta.gouv.fr.\t300\tIN\tSOA\tdns1.alwaysdata.com. hostmaster.alwaysdata.com. 1706690929 3600 900 1209600 300\n",
-      "timestamp": "2024-02-05T18:36:21.801329361Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 46328\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;web-app.diagoriente.beta.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 46328\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;web-app.diagoriente.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ndiagoriente.beta.gouv.fr.\t300\tIN\tSOA\tdns1.alwaysdata.com. hostmaster.alwaysdata.com. 1706690929 3600 900 1209600 300\n",
+      "timestamp": "2024-02-10T00:42:21.153241448Z",
       "matcher-status": true
     },
     {
@@ -61,52 +61,13 @@
       "host": "https://web-app.diagoriente.beta.gouv.fr",
       "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
       "extracted-results": [
-        "HEAD, OPTIONS, POST, GET, PUT, DELETE"
+        "PUT, POST, DELETE, OPTIONS, HEAD, GET"
       ],
       "request": "OPTIONS / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAllow: HEAD, OPTIONS, POST, GET, PUT, DELETE\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Mon, 05 Feb 2024 18:36:42 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55977\r\nX-Iplb-Request-Id: A2133558:6782_5762BBC9:0050_65C12ABA_12ED3F4B:4192\r\nX-Openstack-Request-Id: tx864aca46cd7d4078b13e8-0065c12aba\r\nX-Trans-Id: tx864aca46cd7d4078b13e8-0065c12aba\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAllow: PUT, POST, DELETE, OPTIONS, HEAD, GET\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sat, 10 Feb 2024 00:42:41 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 54403\r\nX-Iplb-Request-Id: A2133558:1E02_3626E64B:0050_65C6C681_1950139C:6060\r\nX-Openstack-Request-Id: tx60a10639ba46411d9575f-0065c6c681\r\nX-Trans-Id: tx60a10639ba46411d9575f-0065c6c681\r\n\r\n",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:36:42.755472227Z",
+      "timestamp": "2024-02-10T00:42:41.564998766Z",
       "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "strict-transport-security",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365097475Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
       "matcher-status": true
     },
     {
@@ -142,165 +103,9 @@
       "host": "https://web-app.diagoriente.beta.gouv.fr",
       "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365145074Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.36515911Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365172185Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.36518557Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365199636Z",
+      "timestamp": "2024-02-10T00:44:37.190253018Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -337,87 +142,9 @@
       "host": "https://web-app.diagoriente.beta.gouv.fr",
       "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365211258Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "referrer-policy",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365224603Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365237828Z",
+      "timestamp": "2024-02-10T00:44:37.19029192Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -454,9 +181,282 @@
       "host": "https://web-app.diagoriente.beta.gouv.fr",
       "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:38:35 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:F3FC_5762BBC9:0050_65C12B2B_1304BAA4:5648\r\nX-Openstack-Request-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx498313e60fb04ebea0d9b-0065c12b2b\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:38:35.365250913Z",
+      "timestamp": "2024-02-10T00:44:37.190308992Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "strict-transport-security",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190326465Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190341112Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190355008Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190368704Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190383491Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.190391987Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:44:37 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55973\r\nX-Iplb-Request-Id: A2133558:869F_3626E64B:0050_65C6C6F5_104DEE70:3366\r\nX-Openstack-Request-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: txe6997fa5ddbd473595060-0065c6c6f5\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:44:37.19040416Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -493,9 +493,9 @@
         "https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015"
       ],
       "request": "GET / HTTP/1.1\r\nHost: web-app.diagoriente.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Mon, 05 Feb 2024 18:39:16 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55979\r\nX-Iplb-Request-Id: A2133558:0B1E_5762BBC9:0050_65C12B54_133EDD26:3D92\r\nX-Openstack-Request-Id: tx760463436f9e4dd78bc91-0065c12b54\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx760463436f9e4dd78bc91-0065c12b54\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1200\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=0, no-store, no-cache, must-revalidate\r\nContent-Type: text/html\r\nDate: Sat, 10 Feb 2024 00:45:23 GMT\r\nEtag: 24b1dc6f10cd5e4b4dc93e4ecc55eafd\r\nLast-Modified: Thu, 25 Jan 2024 10:28:33 GMT\r\nX-Frame-Options: DENY\r\nX-Iplb-Instance: 55980\r\nX-Iplb-Request-Id: A2133558:761B_5762BBC9:0050_65C6C723_14BEC154:2270\r\nX-Openstack-Request-Id: tx4fdc3c6e564e488799a9f-0065c6c723\r\nX-Timestamp: 1706178512.81567\r\nX-Trans-Id: tx4fdc3c6e564e488799a9f-0065c6c723\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"Diagoriente est une plateforme gratuite et ouverte à tous pour valoriser ses compétences et trouver des pistes de métiers selon ses intérêts\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\"/><link rel=\"manifest\" href=\"/site.webmanifest\"/><link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"/><title>Diagoriente</title><script crossorigin=\"anonymous\" src=\"https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015\"></script><script defer=\"defer\" src=\"/static/js/main.a1a1139c.js\"></script><link href=\"/static/css/main.e6a29eef.css\" rel=\"stylesheet\"></head><body><div id=\"root\"></div></body></html>",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:39:16.762296968Z",
+      "timestamp": "2024-02-10T00:45:23.281043624Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Host: web-app.diagoriente.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr/'",
       "matcher-status": true
     },
@@ -526,7 +526,7 @@
         "Let's Encrypt"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.432811244Z",
+      "timestamp": "2024-02-10T00:46:55.74688027Z",
       "matcher-status": true
     },
     {
@@ -553,13 +553,12 @@
       "host": "web-app.diagoriente.beta.gouv.fr",
       "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
       "extracted-results": [
-        "cd93.diagoriente.beta.gouv.fr",
         "cv.1jeune1solution.beta.gouv.fr",
         "orientation.1jeune1solution.beta.gouv.fr",
         "web-app.diagoriente.beta.gouv.fr"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.432924236Z",
+      "timestamp": "2024-02-10T00:46:55.746991908Z",
       "matcher-status": true
     },
     {
@@ -590,7 +589,7 @@
         "tls10"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.449427193Z",
+      "timestamp": "2024-02-10T00:46:55.74863972Z",
       "matcher-status": true
     },
     {
@@ -626,38 +625,7 @@
         "[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.473533096Z",
-      "matcher-status": true
-    },
-    {
-      "template": "ssl/tls-version.yaml",
-      "template-url": "https://templates.nuclei.sh/public/tls-version",
-      "template-id": "tls-version",
-      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-      "info": {
-        "name": "TLS Version - Detect",
-        "author": [
-          "pdteam",
-          "pussycat0x"
-        ],
-        "tags": [
-          "ssl",
-          "tls"
-        ],
-        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 4
-        }
-      },
-      "type": "ssl",
-      "host": "web-app.diagoriente.beta.gouv.fr",
-      "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
-      "extracted-results": [
-        "tls11"
-      ],
-      "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.737801163Z",
+      "timestamp": "2024-02-10T00:46:55.863758355Z",
       "matcher-status": true
     },
     {
@@ -693,7 +661,7 @@
         "tls10"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.765207166Z",
+      "timestamp": "2024-02-10T00:46:56.222094647Z",
       "matcher-status": true
     },
     {
@@ -729,7 +697,7 @@
         "[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:06.771197692Z",
+      "timestamp": "2024-02-10T00:46:56.324558865Z",
       "matcher-status": true
     },
     {
@@ -757,10 +725,10 @@
       "host": "web-app.diagoriente.beta.gouv.fr",
       "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
       "extracted-results": [
-        "tls12"
+        "tls11"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:07.097735362Z",
+      "timestamp": "2024-02-10T00:46:56.337312194Z",
       "matcher-status": true
     },
     {
@@ -796,7 +764,38 @@
         "tls11"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:07.386690443Z",
+      "timestamp": "2024-02-10T00:46:57.119888559Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "web-app.diagoriente.beta.gouv.fr",
+      "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "135.125.83.158",
+      "timestamp": "2024-02-10T00:46:57.219726118Z",
       "matcher-status": true
     },
     {
@@ -827,7 +826,7 @@
         "tls13"
       ],
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:07.588806541Z",
+      "timestamp": "2024-02-10T00:46:57.489919342Z",
       "matcher-status": true
     },
     {
@@ -865,7 +864,7 @@
       "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
       "request": "2E",
       "ip": "135.125.83.158",
-      "timestamp": "2024-02-05T18:41:09.852363335Z",
+      "timestamp": "2024-02-10T00:46:59.272393022Z",
       "matcher-status": true
     }
   ]

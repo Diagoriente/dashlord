@@ -26,7 +26,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1707157825676&ver=1.68.5"
+      "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1707525405044&ver=1.68.5"
     },
     {
       "type": "unknown",
@@ -87,15 +87,15 @@
     "cache-control": "max-age=0, no-store, no-cache, must-revalidate",
     "content-length": "1200",
     "content-type": "text/html",
-    "date": "Mon, 05 Feb 2024 18:30:24 GMT",
+    "date": "Sat, 10 Feb 2024 00:36:43 GMT",
     "etag": "24b1dc6f10cd5e4b4dc93e4ecc55eafd",
     "last-modified": "Thu, 25 Jan 2024 10:28:33 GMT",
     "x-frame-options": "DENY",
-    "x-iplb-instance": "54407",
-    "x-iplb-request-id": "A2133558:7D4F_5762BBC9:0050_65C12940_1304143F:382F",
-    "x-openstack-request-id": "txfa72c82706a54c6c9ecd6-0065c12940",
+    "x-iplb-instance": "54408",
+    "x-iplb-request-id": "A2133558:5C88_5762BBC9:0050_65C6C51B_14B55492:71E4",
+    "x-openstack-request-id": "tx83b523b35c33454c9a6f2-0065c6c51b",
     "x-timestamp": "1706178512.81567",
-    "x-trans-id": "txfa72c82706a54c6c9ecd6-0065c12940"
+    "x-trans-id": "tx83b523b35c33454c9a6f2-0065c6c51b"
   },
   "endpoints": [
     {
@@ -156,7 +156,7 @@
     },
     {
       "hostname": "polyfill.io",
-      "ip": "151.101.129.26",
+      "ip": "151.101.65.26",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -210,14 +210,8 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "142.250.190.138",
       "geoip": {
-        "city": {
-          "geoname_id": 5133273,
-          "names": {
-            "en": "Queens"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -247,14 +241,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 40.66,
-          "longitude": -73.839,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11414"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -269,23 +259,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     },
     {
@@ -402,7 +376,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.250.191.227",
       "geoip": {
         "continent": {
           "code": "NA",
