@@ -23,7 +23,7 @@
     "content-length": "2668",
     "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self'; frame-src 'self' https://diagoriente.beta.gouv.fr; style-src 'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; style-src-elem  'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; script-src 'unsafe-inline' 'self'; connect-src 'self' *.diagoriente.beta.gouv.fr https://sentry.diagomonito.net/",
     "content-type": "text/html",
-    "date": "Sat, 10 Feb 2024 00:12:30 GMT",
+    "date": "Sun, 11 Feb 2024 01:09:31 GMT",
     "etag": "\"64e77fb7-152d\"",
     "last-modified": "Thu, 24 Aug 2023 16:05:11 GMT",
     "server": "nginx/1.25.2",
@@ -92,7 +92,7 @@
     },
     {
       "hostname": "unpkg.com",
-      "ip": "104.16.125.175",
+      "ip": "104.16.124.175",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
