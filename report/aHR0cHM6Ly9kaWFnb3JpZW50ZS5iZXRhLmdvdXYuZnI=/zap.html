@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 18 Feb 2024 01:12:50
+		Generated on Sun, 25 Feb 2024 01:13:35
 	</h3>
 
 	<h3>
@@ -200,7 +200,7 @@ td {
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
@@ -220,7 +220,7 @@ td {
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">17</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
@@ -250,7 +250,7 @@ td {
 			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
@@ -280,7 +280,7 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">7</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
@@ -370,6 +370,37 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/">https://diagoriente.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form class=&quot;w-full&quot; noValidate=&quot;&quot; action=&quot;&quot; encType=&quot;multipart/form-data&quot; method=&quot;POST&quot;&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;$ACTION_1:0&quot; &quot;$ACTION_1:1&quot; &quot;$ACTION_KEY&quot; &quot;$ACTION_REF_1&quot; &quot;newsletter-email&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -524,7 +555,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/analytics">https://diagoriente.beta.gouv.fr/services/analytics</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -555,7 +586,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -678,7 +709,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1260,6 +1291,192 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr">https://diagoriente.beta.gouv.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr">https://diagoriente.beta.gouv.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Mona_3e585174c9.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr">https://diagoriente.beta.gouv.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Vitamine_T2_ff9e2310c5.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/">https://diagoriente.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/">https://diagoriente.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Mona_3e585174c9.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/">https://diagoriente.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Vitamine_T2_ff9e2310c5.png&quot;/&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
 					</tr>
 					<tr>
@@ -1435,348 +1652,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/article_test_25c7ffc6d2.jpeg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Services_26b982ee90.png&quot; fetchPriority=&quot;high&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Analytics_5efa440b16.svg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Carriere_c0f08c936a.svg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Pf_995138f3f0.svg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Pro_ec4bd84342.svg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Scolaire_32d89a4e33.svg&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Scolaire_5b3930bfaa.png&quot; fetchPriority=&quot;high&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/ecran_scolaire_ce34ebd645.png&quot; fetchPriority=&quot;high&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Plateforme_d2a4a26cbe.png&quot; fetchPriority=&quot;high&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/Miniature_DPF_fonce_579dd7ab52.jpg&quot; fetchPriority=&quot;high&quot;/&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Pro_cab5eb2ce6.png&quot; fetchPriority=&quot;high&quot;/&gt;</td>
+						<td width="80%">&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Vitamine_T2_ff9e2310c5.png&quot;/&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1786,7 +1662,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">17</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1872,6 +1748,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/">https://diagoriente.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1995,7 +1902,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/analytics">https://diagoriente.beta.gouv.fr/services/analytics</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2027,37 +1934,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2308,6 +2184,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Next.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/contact">https://diagoriente.beta.gouv.fr/contact</a></td>
 					</tr>
 					<tr>
@@ -2401,7 +2308,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/analytics">https://diagoriente.beta.gouv.fr/services/analytics</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2433,37 +2340,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">X-Powered-By: Next.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2663,12 +2539,12 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">fr-header-quick-access-item--Contact-0</td>
+						<td width="80%">net/BANNER_Infolettre_9b733ff48d</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">~��y�^�ꮉ�&gt;i��Ϣ���*&#39;��-�</td>
+						<td width="80%">��Mȝ�%z�k{�[�}��</td>
 					</tr>
 				
 					<tr>
@@ -2694,12 +2570,43 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">fr-header-quick-access-item--Contact-0</td>
+						<td width="80%">net/BANNER_Infolettre_9b733ff48d</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">~��y�^�ꮉ�&gt;i��Ϣ���*&#39;��-�</td>
+						<td width="80%">��Mȝ�%z�k{�[�}��</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">net/BANNER_Infolettre_9b733ff48d</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">��Mȝ�%z�k{�[�}��</td>
 					</tr>
 				
 					<tr>
@@ -2798,7 +2705,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/analytics">https://diagoriente.beta.gouv.fr/services/analytics</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2818,12 +2725,12 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">net/BANNER_Scolaire_5b3930bfaa</td>
+						<td width="80%">net/BANNER_Analytics_702827e9e7</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">��M�r�Z������F�i</td>
+						<td width="80%">��M���r�&#39;,��6�n���</td>
 					</tr>
 				
 					<tr>
@@ -2855,37 +2762,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">��Mϕ�^~��{�vk�����</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">fr-header-quick-access-item--Contact-0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">~��y�^�ꮉ�&gt;i��Ϣ���*&#39;��-�</td>
 					</tr>
 				
 					<tr>
@@ -3037,6 +2913,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/217-6c9ae121bfb9d6a4.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/217-6c9ae121bfb9d6a4.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">user</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[217],{7132:function(e,t,n){n.r(t),n.d(t,{Accordion:functio&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/362ffeb4-978910da9c71c0ea.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/362ffeb4-978910da9c71c0ea.js</a></td>
 					</tr>
 					<tr>
@@ -3094,6 +3001,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[427],{9410:function(e,t,n){Object.defineProperty(t,&quot;__esMo&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/646-56cb3105992cbcd7.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/646-56cb3105992cbcd7.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[646],{9580:function(e,t,n){&quot;use strict&quot;;n.d(t,{z:function(){return f}})&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
@@ -3161,7 +3099,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/761-83b4178df3c7d1e7.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/761-83b4178df3c7d1e7.js</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/761-d9fd4f3c19c12e90.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/761-d9fd4f3c19c12e90.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3187,68 +3125,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[761],{4013:function(r,e,i){i.r(e),i.d(e,{DynamicDSFRCardGr&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/791-90c69c96f5bd3e00.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/791-90c69c96f5bd3e00.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[791],{9101:function(e,t,n){&quot;use strict&quot;;n.d(t,{z:function(){return f}})&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/834-b1f19ce0cab562d0.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/834-b1f19ce0cab562d0.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">user</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[834],{5485:function(e,t,n){n.r(t),n.d(t,{Accordion:functio&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
@@ -3280,6 +3156,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[953],{953:function(e,t,n){Object.defineProperty(t,&quot;__esMod&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/_next/static/chunks/app/contact/page-a5f104435797724e.js">https://diagoriente.beta.gouv.fr/_next/static/chunks/app/contact/page-a5f104435797724e.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">select</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[327],{2677:function(e,t,r){Promise.resolve().then(r.bind(r,4089)),Promi&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
@@ -3353,37 +3260,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">select</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;&lt;script&gt;self.__next_f.push([1,&quot;6:[\&quot;$\&quot;,\&quot;div\&quot;,null,{\&quot;className\&quot;:\&quot;fr-container\&quot;,\&quot;children\&quot;:[[\&quot;$\&quot;,\&quot;nav\&quot;,null,{\&quot;id\&quot;:\&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro/se-former">https://diagoriente.beta.gouv.fr/services/pro/se-former</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3583,6 +3459,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/innovation/ressources">https://diagoriente.beta.gouv.fr/innovation/ressources</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;a class=&quot;fr-breadcrumb__link&quot; aria-current=&quot;page&quot;&gt;Ressources scientifiques&lt;/a&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
 					</tr>
 					<tr>
@@ -3635,37 +3542,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;a class=&quot;fr-breadcrumb__link&quot; aria-current=&quot;page&quot;&gt;Diagoriente Analytics&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;fr-breadcrumb__link&quot; aria-current=&quot;page&quot;&gt;Diagoriente Collège&lt;/a&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3880,6 +3756,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/blog">https://diagoriente.beta.gouv.fr/blog</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/contact">https://diagoriente.beta.gouv.fr/contact</a></td>
 					</tr>
 					<tr>
@@ -3941,7 +3848,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4127,6 +4034,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/innovation/ressources">https://diagoriente.beta.gouv.fr/innovation/ressources</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">cache-control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">s-maxage=300, stale-while-revalidate</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/robots.txt">https://diagoriente.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -4189,7 +4127,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/college">https://diagoriente.beta.gouv.fr/services/college</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/analytics">https://diagoriente.beta.gouv.fr/services/analytics</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4221,37 +4159,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=300, stale-while-revalidate</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro">https://diagoriente.beta.gouv.fr/services/pro</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5142,37 +5049,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/plateforme">https://diagoriente.beta.gouv.fr/services/plateforme</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=300</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro/se-former">https://diagoriente.beta.gouv.fr/services/pro/se-former</a></td>
 					</tr>
 					<tr>
@@ -5234,7 +5110,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5544,10 +5420,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-$ACTION_KEY=k932489370
+$ACTION_KEY=k761631981
 
 The user-controlled value was:
-k932489370</td>
+k761631981</td>
 					</tr>
 				
 					<tr>
@@ -5673,16 +5549,16 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-$ACTION_KEY=k1593413325
+$ACTION_KEY=k3508919887
 
 The user-controlled value was:
-k1593413325</td>
+k3508919887</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro/se-former">https://diagoriente.beta.gouv.fr/services/pro/se-former</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5709,7 +5585,7 @@ k1593413325</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://diagoriente.beta.gouv.fr/services/pro/se-former
+https://diagoriente.beta.gouv.fr/services
 
 appears to include user input in: 
 
@@ -5725,7 +5601,7 @@ The user-controlled value was:
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro/se-former">https://diagoriente.beta.gouv.fr/services/pro/se-former</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5752,7 +5628,7 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://diagoriente.beta.gouv.fr/services/pro/se-former
+https://diagoriente.beta.gouv.fr/services
 
 appears to include user input in: 
 
@@ -5768,7 +5644,7 @@ The user-controlled value was:
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services/pro/se-former">https://diagoriente.beta.gouv.fr/services/pro/se-former</a></td>
+						<td width="80%"><a href="https://diagoriente.beta.gouv.fr/services">https://diagoriente.beta.gouv.fr/services</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5795,17 +5671,17 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://diagoriente.beta.gouv.fr/services/pro/se-former
+https://diagoriente.beta.gouv.fr/services
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-$ACTION_KEY=k932489370
+$ACTION_KEY=k761631981
 
 The user-controlled value was:
-k932489370</td>
+k761631981</td>
 					</tr>
 				
 					<tr>
@@ -5931,10 +5807,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-$ACTION_KEY=k932489370
+$ACTION_KEY=k761631981
 
 The user-controlled value was:
-k932489370</td>
+k761631981</td>
 					</tr>
 				
 				<tr>
