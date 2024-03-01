@@ -5836,7 +5836,9 @@
       }
     ],
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -5867,7 +5869,8 @@
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "D",
-      "ecoindexGrade": "A"
+      "ecoindexGrade": "A",
+      "dsfrGrade": "F"
     }
   },
   {
@@ -8588,7 +8591,9 @@
       }
     ],
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B+",
@@ -8619,7 +8624,8 @@
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "D",
-      "ecoindexGrade": "B"
+      "ecoindexGrade": "B",
+      "dsfrGrade": "F"
     }
   },
   {
@@ -11894,7 +11900,9 @@
       }
     ],
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "C-",
@@ -11925,7 +11933,8 @@
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
       "declaration-rgpd-pc": "F",
-      "ecoindexGrade": "B"
+      "ecoindexGrade": "B",
+      "dsfrGrade": "F"
     }
   }
 ]
