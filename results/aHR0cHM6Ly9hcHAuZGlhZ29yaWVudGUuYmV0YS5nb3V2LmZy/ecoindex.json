@@ -3,15 +3,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://app.diagoriente.beta.gouv.fr",
-        "size": 1664.895,
+        "size": 1664.667,
         "nodes": 181,
-        "requests": 29,
+        "requests": 28,
         "grade": "B",
         "score": 77.0,
         "ges": 1.46,
         "water": 2.19,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-03 01:08:46.997239",
+        "date": "2024-03-10 01:09:32.658857",
         "page_type": null
     }
 ]
