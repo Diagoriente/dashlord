@@ -14,16 +14,16 @@
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1709428089556&ver=1.103.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1710032931934&ver=1.103.0"
     }
   ],
   "cookies": [
     {
       "name": "ph_phc_NRQNiei0cV6m0UuVNyOnYRj4WHMaGIvCPxah2CBnYFp_posthog",
-      "value": "%7B%22distinct_id%22%3A%22018e01da-a2d2-730a-a492-9e7c22c539ab%22%7D",
+      "value": "%7B%22distinct_id%22%3A%22018e25e7-cc5c-70d5-89a4-eab2c1a902e1%22%7D",
       "domain": ".beta.gouv.fr",
       "path": "/",
-      "expires": 1740964089,
+      "expires": 1741568932,
       "size": 126,
       "httpOnly": false,
       "secure": true,
@@ -39,8 +39,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 03 Mar 2024 01:08:08 GMT",
-    "etag": "\"ama5ahan9q27f7\"",
+    "date": "Sun, 10 Mar 2024 01:08:51 GMT",
+    "etag": "\"y06ru5zsd27e0\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding\nRSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -84,7 +84,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
@@ -164,7 +164,7 @@
     },
     {
       "hostname": "eu.posthog.com",
-      "ip": "108.138.246.100",
+      "ip": "52.85.132.39",
       "geoip": {
         "continent": {
           "code": "NA",
