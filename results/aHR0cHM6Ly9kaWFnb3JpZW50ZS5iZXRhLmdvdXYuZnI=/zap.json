@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 01:13:05",
+	"@generated": "Sun, 17 Mar 2024 01:13:19",
 	"site":[ 
 		{
 			"@name": "https://diagoriente.beta.gouv.fr",
@@ -114,7 +114,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10055",
@@ -135,7 +135,7 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
+							"uri": "https://diagoriente.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -143,7 +143,7 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -157,7 +157,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10055",
@@ -178,7 +178,7 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
+							"uri": "https://diagoriente.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -186,7 +186,7 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -200,7 +200,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10055",
@@ -221,7 +221,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
+							"uri": "https://diagoriente.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -229,7 +229,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/sitemap",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -243,7 +243,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90003",
@@ -304,51 +304,51 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Article_Etudiant_24eef24a3f.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Services_26b982ee90.png\" fetchPriority=\"high\"/>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Analytics_5efa440b16.svg\"/>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_L_Etudiant_Partenariat_07cdafc075.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Carriere_c0f08c936a.svg\"/>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Mona_3e585174c9.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Pf_995138f3f0.svg\"/>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Valo_Sport_f65fd0c2b4.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Pro_ec4bd84342.svg\"/>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://diagoriente.beta.gouv.fr/blog",
+							"uri": "https://diagoriente.beta.gouv.fr/services",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Vitamine_T2_ff9e2310c5.png\"/>",
+							"evidence": "<link rel=\"preload\" as=\"image\" href=\"https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/VISU_Scolaire_32d89a4e33.svg\"/>",
 							"otherinfo": ""
 						}
 					],
@@ -358,7 +358,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10063",
@@ -465,7 +465,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10037",
@@ -572,7 +572,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10094",
@@ -679,7 +679,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10027",
@@ -691,6 +691,14 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
+						{
+							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/150-45c60f852681794b.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[150],{9236:function(e,t,r){r.r(t),r.d(t,{Alert:function(){\", see evidence field for the suspicious comment/snippet."
+						},
 						{
 							"uri": "https://diagoriente.beta.gouv.fr/_next/static/chunks/217-6c9ae121bfb9d6a4.js",
 							"method": "GET",
@@ -778,23 +786,15 @@
 							"attack": "",
 							"evidence": "select",
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>self.__next_f.push([1,\"6:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"fr-container\\\",\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"id\\\":\\\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://diagoriente.beta.gouv.fr/services/pro/se-former",
-							"method": "POST",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>self.__next_f.push([1,\"6:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"fr-container\\\",\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"id\\\":\\\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[217],{7132:function(e,t,n){n.r(t),n.d(t,{Accordion:functio\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[150],{9236:function(e,t,r){r.r(t),r.d(t,{Alert:function(){\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "269"
+					"sourceid": "279"
 				},
 				{
 					"pluginid": "10109",
@@ -909,7 +909,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "111"
+					"sourceid": "114"
 				},
 				{
 					"pluginid": "10049",
@@ -952,7 +952,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "111"
+					"sourceid": "114"
 				},
 				{
 					"pluginid": "10015",
@@ -1059,7 +1059,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90005",
@@ -1102,7 +1102,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90005",
@@ -1145,7 +1145,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90005",
@@ -1188,7 +1188,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90005",
@@ -1231,7 +1231,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10049",
@@ -1298,7 +1298,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10049",
@@ -1448,7 +1448,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "273"
+					"sourceid": "280"
 				}
 			]
 		}
