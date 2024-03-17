@@ -18,7 +18,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1710032914229&ver=1.100.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1710637725461&ver=1.100.0"
     },
     {
       "type": "unknown",
@@ -58,7 +58,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=OEbXEg6OEPr68AD7&nonce=F2H2kQuL60aR&code_challenge=QUg1e2moxdMbMGgn1mL37SsiTHdQTMmzkxVm_rYUAgA&code_challenge_method=S256"
+      "url": "https://auth.prod.diagoriente.diagotech.dev/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=l7PJwGn8egx2ApTx&nonce=xHTWEbxykFsX&code_challenge=M7C2sxVCkExmIeON8nHoELnthpi9cVMLT_02YK23ryo&code_challenge_method=S256"
     },
     {
       "type": "unknown",
@@ -128,7 +128,7 @@
     "content-encoding": "gzip",
     "content-length": "829",
     "content-type": "text/html",
-    "date": "Sun, 10 Mar 2024 01:08:33 GMT",
+    "date": "Sun, 17 Mar 2024 01:08:44 GMT",
     "etag": "\"65e083d0-33d\"",
     "last-modified": "Thu, 29 Feb 2024 13:17:04 GMT",
     "server": "nginx",
@@ -197,8 +197,14 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.122.95",
+      "ip": "142.251.16.95",
       "geoip": {
+        "city": {
+          "geoname_id": 5133273,
+          "names": {
+            "en": "Queens"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -228,10 +234,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.66,
+          "longitude": -73.839,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11414"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -246,12 +256,28 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "eu.posthog.com",
-      "ip": "52.85.132.39",
+      "ip": "52.85.132.67",
       "geoip": {
         "continent": {
           "code": "NA",

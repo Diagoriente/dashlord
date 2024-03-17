@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 01:11:44",
+	"@generated": "Sun, 17 Mar 2024 01:11:56",
 	"site":[ 
 		{
 			"@name": "https://plateforme.diagoriente.beta.gouv.fr",
@@ -189,7 +189,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10110",
@@ -267,7 +267,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -1990,9 +1990,17 @@
 							"attack": "",
 							"evidence": "2024746970",
 							"otherinfo": "2024746970, which evaluates to: 2034-02-28 13:42:50"
+						},
+						{
+							"uri": "https://plateforme.diagoriente.beta.gouv.fr/assets/index-OM3ZIxdC.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2025931657",
+							"otherinfo": "2025931657, which evaluates to: 2034-03-14 06:47:37"
 						}
 					],
-					"count": "214",
+					"count": "215",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1395535956, which evaluates to: 2014-03-23 00:52:36</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
@@ -2159,7 +2167,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10015",
@@ -2245,7 +2253,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -2288,7 +2296,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -2331,7 +2339,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -2374,7 +2382,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -2449,7 +2457,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "16"
+					"sourceid": "19"
 				},
 				{
 					"pluginid": "10049",
@@ -2492,7 +2500,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				}
 			]
 		}
