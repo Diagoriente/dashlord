@@ -2,6 +2,10 @@
   "trackers": [
     {
       "type": "unknown",
+      "url": "https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png"
+    },
+    {
+      "type": "unknown",
       "url": "https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Vitamine_T2_ff9e2310c5.png"
     },
     {
@@ -10,20 +14,16 @@
     },
     {
       "type": "unknown",
-      "url": "https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net/BANNER_Infolettre_9b733ff48d.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1710637739365&ver=1.103.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1711242692664&ver=1.103.0"
     }
   ],
   "cookies": [
     {
       "name": "ph_phc_NRQNiei0cV6m0UuVNyOnYRj4WHMaGIvCPxah2CBnYFp_posthog",
-      "value": "%7B%22distinct_id%22%3A%22018e49f4-6d63-79b4-b5aa-535a6fabbe2c%22%7D",
+      "value": "%7B%22distinct_id%22%3A%22018e6e03-4836-7c29-83a8-61f95ff62109%22%7D",
       "domain": ".beta.gouv.fr",
       "path": "/",
-      "expires": 1742173739,
+      "expires": 1742778692,
       "size": 126,
       "httpOnly": false,
       "secure": true,
@@ -39,8 +39,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 17 Mar 2024 01:08:58 GMT",
-    "etag": "\"742q4f8drg27f7\"",
+    "date": "Sun, 24 Mar 2024 01:11:31 GMT",
+    "etag": "\"ryyzp2de5527er\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding\nRSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -182,6 +182,7 @@
               "fr": "Île-de-France",
               "ja": "イル・ド・フランス",
               "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
               "zh-CN": "法兰西岛"
             }
           },
@@ -192,7 +193,11 @@
               "de": "Seine-Saint-Denis",
               "en": "Seine-Saint-Denis",
               "es": "Sena Saint Denis",
-              "fr": "Seine-Saint-Denis"
+              "fr": "Seine-Saint-Denis",
+              "ja": "セーヌ＝サン＝ドニ県",
+              "pt-BR": "Seine-Saint-Denis",
+              "ru": "Сен-Сен-Дени",
+              "zh-CN": "塞纳-圣但尼省"
             }
           }
         ]
@@ -200,7 +205,7 @@
     },
     {
       "hostname": "eu.posthog.com",
-      "ip": "52.85.132.102",
+      "ip": "18.65.3.29",
       "geoip": {
         "continent": {
           "code": "NA",
