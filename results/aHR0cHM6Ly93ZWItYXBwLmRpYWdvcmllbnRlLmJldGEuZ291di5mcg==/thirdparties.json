@@ -26,7 +26,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1710638669739&ver=1.68.5"
+      "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1711243708009&ver=1.68.5"
     },
     {
       "type": "unknown",
@@ -79,10 +79,6 @@
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
-    },
-    {
-      "type": "unknown",
-      "url": "https://sentry.diagomonito.net/api/3/envelope/?sentry_key=c2ae4c61d3eb44d19d4af45b0d09f460&sentry_version=7&sentry_client=sentry.javascript.react%2F7.17.4"
     }
   ],
   "cookies": [],
@@ -91,15 +87,15 @@
     "cache-control": "max-age=0, no-store, no-cache, must-revalidate",
     "content-length": "1200",
     "content-type": "text/html",
-    "date": "Sun, 17 Mar 2024 01:24:28 GMT",
+    "date": "Sun, 24 Mar 2024 01:28:27 GMT",
     "etag": "24b1dc6f10cd5e4b4dc93e4ecc55eafd",
     "last-modified": "Thu, 25 Jan 2024 10:28:33 GMT",
     "x-frame-options": "DENY",
-    "x-iplb-instance": "55979",
-    "x-iplb-request-id": "A2133558:6244_5762BBC9:0050_65F6464C_961493A8:4F17",
-    "x-openstack-request-id": "tx8bbf206e824749b08b437-0065f6464c",
+    "x-iplb-instance": "54402",
+    "x-iplb-request-id": "A2133558:5AA1_3626E64B:0050_65FF81BB_B55F9558:6D63",
+    "x-openstack-request-id": "tx48581ed5ad844dca84a1a-0065ff81bb",
     "x-timestamp": "1706178512.81567",
-    "x-trans-id": "tx8bbf206e824749b08b437-0065f6464c"
+    "x-trans-id": "tx48581ed5ad844dca84a1a-0065ff81bb"
   },
   "endpoints": [
     {
@@ -180,8 +176,14 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.62.95",
+      "ip": "142.251.111.95",
       "geoip": {
+        "city": {
+          "geoname_id": 5116931,
+          "names": {
+            "en": "Farmingdale"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -211,10 +213,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.7306,
+          "longitude": -73.4313,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11735"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -229,7 +235,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {
@@ -346,7 +368,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.63.94",
+      "ip": "172.253.62.94",
       "geoip": {
         "continent": {
           "code": "NA",
