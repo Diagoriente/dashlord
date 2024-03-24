@@ -3,7 +3,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://plateforme.diagoriente.beta.gouv.fr",
-        "size": 938.494,
+        "size": 934.609,
         "nodes": 77,
         "requests": 26,
         "grade": "A",
@@ -11,7 +11,7 @@
         "ges": 1.32,
         "water": 1.98,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-17 01:09:47.047853",
+        "date": "2024-03-24 01:11:57.752694",
         "page_type": null
     }
 ]
