@@ -10,16 +10,16 @@
     },
     {
       "type": "unknown",
-      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1711847501224&ver=1.103.0"
+      "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1712452296241&ver=1.103.0"
     }
   ],
   "cookies": [
     {
       "name": "ph_phc_NRQNiei0cV6m0UuVNyOnYRj4WHMaGIvCPxah2CBnYFp_posthog",
-      "value": "%7B%22distinct_id%22%3A%22018e920f-eda6-76de-a881-0714d8bc93ee%22%7D",
+      "value": "%7B%22distinct_id%22%3A%22018eb61c-5e2f-78ca-9fd2-f41880982cbe%22%7D",
       "domain": ".beta.gouv.fr",
       "path": "/",
-      "expires": 1743383501,
+      "expires": 1743988296,
       "size": 126,
       "httpOnly": false,
       "secure": true,
@@ -35,8 +35,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 31 Mar 2024 01:11:40 GMT",
-    "etag": "\"qgub1g26ha26nj\"",
+    "date": "Sun, 07 Apr 2024 01:11:35 GMT",
+    "etag": "\"6uw8o7pw4326oq\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding\nRSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -201,7 +201,7 @@
     },
     {
       "hostname": "eu.posthog.com",
-      "ip": "13.224.214.21",
+      "ip": "18.67.65.63",
       "geoip": {
         "continent": {
           "code": "NA",
