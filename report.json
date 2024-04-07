@@ -5,7 +5,7 @@
     "http": {
       "url": "https://diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Sun, 31 Mar 2024 01:16:33 GMT",
+      "end_time": "Sun, 07 Apr 2024 01:16:14 GMT",
       "grade": "B+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -14,20 +14,20 @@
         "Content-Encoding": "gzip",
         "Content-Security-Policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 31 Mar 2024 01:16:31 GMT",
-        "Etag": "\"5pqhs2pb3926nu\"",
+        "Date": "Sun, 07 Apr 2024 01:16:12 GMT",
+        "Etag": "\"6uw8o7pw4326oq\"",
         "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding, RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "DENY",
-        "X-Nextjs-Cache": "HIT",
+        "X-Nextjs-Cache": "MISS",
         "X-Powered-By": "Next.js",
         "X-Xss-Protection": "1; mode=block"
       },
-      "scan_id": 49491490,
+      "scan_id": 49760803,
       "score": 80,
-      "start_time": "Sun, 31 Mar 2024 01:16:28 GMT",
+      "start_time": "Sun, 07 Apr 2024 01:16:08 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -40,48 +40,48 @@
           "output": {
             "data": {
               "connect-src": [
+                "'self'",
                 "*.mapbox.com",
-                "https://eu.posthog.com",
-                "'self'"
+                "https://eu.posthog.com"
               ],
               "default-src": [
                 "'self'"
               ],
               "frame-ancestors": [
-                "*.diagoriente.beta.gouv.fr",
-                "'self'"
+                "'self'",
+                "*.diagoriente.beta.gouv.fr"
               ],
               "frame-src": [
+                "'self'",
                 "https://youtube.com",
-                "https://www.youtube.com",
-                "'self'"
+                "https://www.youtube.com"
               ],
               "img-src": [
-                "data:",
-                "*"
+                "*",
+                "data:"
               ],
               "media-src": [
+                "'self'",
                 "https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net",
-                "https://youtube.com",
-                "'self'"
+                "https://youtube.com"
               ],
               "script-src": [
+                "'self'",
                 "https://youtube.com",
-                "https://www.youtube.com",
                 "'unsafe-inline'",
-                "'self'"
+                "https://www.youtube.com"
               ],
               "style-src": [
-                "'unsafe-inline'",
-                "'self'"
+                "'self'",
+                "'unsafe-inline'"
               ],
               "style-src-elem": [
-                "'unsafe-inline'",
-                "'self'"
+                "'self'",
+                "'unsafe-inline'"
               ],
               "worker-src": [
-                "blob:",
-                "'self'"
+                "'self'",
+                "blob:"
               ]
             },
             "http": true,
@@ -240,7 +240,7 @@
       "url": "https://diagoriente.beta.gouv.fr",
       "alias": "",
       "last_status": 200,
-      "uptime": 99.929,
+      "uptime": 100,
       "down": false,
       "down_since": null,
       "up_since": "2024-03-03T01:39:27Z",
@@ -631,7 +631,7 @@
         "ip": "diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "OK",
-        "finding": "77 >= 30 days"
+        "finding": "70 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -785,14 +785,14 @@
         "ip": "diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "INFO",
-        "finding": "1711847822"
+        "finding": "1712452604"
       },
       {
         "id": "HSTS_time",
@@ -1383,7 +1383,7 @@
         "ip": "diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "INFO",
-        "finding": "78"
+        "finding": "79"
       }
     ],
     "thirdparties": {
@@ -1398,16 +1398,16 @@
         },
         {
           "type": "unknown",
-          "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1711847501224&ver=1.103.0"
+          "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1712452296241&ver=1.103.0"
         }
       ],
       "cookies": [
         {
           "name": "ph_phc_NRQNiei0cV6m0UuVNyOnYRj4WHMaGIvCPxah2CBnYFp_posthog",
-          "value": "%7B%22distinct_id%22%3A%22018e920f-eda6-76de-a881-0714d8bc93ee%22%7D",
+          "value": "%7B%22distinct_id%22%3A%22018eb61c-5e2f-78ca-9fd2-f41880982cbe%22%7D",
           "domain": ".beta.gouv.fr",
           "path": "/",
-          "expires": 1743383501,
+          "expires": 1743988296,
           "size": 126,
           "httpOnly": false,
           "secure": true,
@@ -1423,8 +1423,8 @@
         "content-encoding": "gzip",
         "content-security-policy": "default-src 'self'; img-src * data:;frame-ancestors 'self' *.diagoriente.beta.gouv.fr; frame-src 'self' https://youtube.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; style-src-elem  'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' https://youtube.com https://www.youtube.com; connect-src 'self' *.mapbox.com https://eu.posthog.com; media-src 'self' https://youtube.com https://diagoriente-website-prod.s3.gra.io.cloud.ovh.net; worker-src 'self' blob:",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 31 Mar 2024 01:11:40 GMT",
-        "etag": "\"qgub1g26ha26nj\"",
+        "date": "Sun, 07 Apr 2024 01:11:35 GMT",
+        "etag": "\"6uw8o7pw4326oq\"",
         "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
         "vary": "Accept-Encoding\nRSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
         "x-content-type-options": "nosniff",
@@ -1589,7 +1589,7 @@
         },
         {
           "hostname": "eu.posthog.com",
-          "ip": "13.224.214.21",
+          "ip": "18.67.65.63",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1833,7 +1833,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 31 Mar 2024 01:16:01",
+      "@generated": "Sun, 7 Apr 2024 01:15:44",
       "site": [
         {
           "@name": "https://diagoriente.beta.gouv.fr",
@@ -1980,41 +1980,6 @@
     },
     "nuclei": [
       {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "diagoriente.beta.gouv.fr.",
-        "matched-at": "diagoriente.beta.gouv.fr",
-        "timestamp": "2024-03-31T01:18:09.003893249Z",
-        "matcher-status": true
-      },
-      {
         "template": "dns/dmarc-detect.yaml",
         "template-url": "https://templates.nuclei.sh/public/dmarc-detect",
         "template-id": "dmarc-detect",
@@ -2051,7 +2016,46 @@
         "extracted-results": [
           "\"v=DMARC1; p=none; sp=none; rua=mailto:dmarc@mailinblue.com!10m; ruf=mailto:dmarc@mailinblue.com!10m; rf=afrf; pct=100; ri=86400\""
         ],
-        "timestamp": "2024-03-31T01:18:09.077797906Z",
+        "timestamp": "2024-04-07T01:17:50.785716674Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/mx-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+        "template-id": "mx-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+        "info": {
+          "name": "MX Record Detection",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "mx"
+          ],
+          "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+          "reference": [
+            "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+            "https://mxtoolbox.com/"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "diagoriente.beta.gouv.fr.",
+        "matched-at": "diagoriente.beta.gouv.fr",
+        "extracted-results": [
+          "5 mx-mibc-fr-10.mailinblack.com."
+        ],
+        "timestamp": "2024-04-07T01:17:51.613217909Z",
         "matcher-status": true
       },
       {
@@ -2087,7 +2091,7 @@
           "dns1.alwaysdata.com.",
           "dns2.alwaysdata.com."
         ],
-        "timestamp": "2024-03-31T01:18:09.991424523Z",
+        "timestamp": "2024-04-07T01:17:51.614922323Z",
         "matcher-status": true
       },
       {
@@ -2127,7 +2131,7 @@
           "\"Sendinblue-code:bfa8bf448e49e98e49c09a8b8884e415\"",
           "\"v=spf1 include:spf.sendinblue.com mx ~all\""
         ],
-        "timestamp": "2024-03-31T01:18:09.993101257Z",
+        "timestamp": "2024-04-07T01:17:51.704608398Z",
         "matcher-status": true
       },
       {
@@ -2159,27 +2163,26 @@
         "extracted-results": [
           "v=spf1 include:spf.sendinblue.com mx ~all\""
         ],
-        "timestamp": "2024-03-31T01:18:09.993152753Z",
+        "timestamp": "2024-04-07T01:17:51.704663071Z",
         "matcher-status": true
       },
       {
-        "template": "dns/mx-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-        "template-id": "mx-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+        "template": "dns/caa-fingerprint.yaml",
+        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+        "template-id": "caa-fingerprint",
+        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
         "info": {
-          "name": "MX Record Detection",
+          "name": "CAA Record",
           "author": [
             "pdteam"
           ],
           "tags": [
             "dns",
-            "mx"
+            "caa"
           ],
-          "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
           "reference": [
-            "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-            "https://mxtoolbox.com/"
+            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
           ],
           "severity": "info",
           "metadata": {
@@ -2195,10 +2198,7 @@
         "type": "dns",
         "host": "diagoriente.beta.gouv.fr.",
         "matched-at": "diagoriente.beta.gouv.fr",
-        "extracted-results": [
-          "5 mx-mibc-fr-10.mailinblack.com."
-        ],
-        "timestamp": "2024-03-31T01:18:09.995907351Z",
+        "timestamp": "2024-04-07T01:17:51.773107448Z",
         "matcher-status": true
       },
       {
@@ -2229,7 +2229,7 @@
           "HEAD"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:21.513664459Z",
+        "timestamp": "2024-04-07T01:19:06.709961873Z",
         "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2270,44 +2270,7 @@
           "1; mode=block"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:20:16.889481236Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://diagoriente.beta.gouv.fr",
-        "matched-at": "https://diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329202538Z",
+        "timestamp": "2024-04-07T01:20:05.071979241Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2344,7 +2307,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329255406Z",
+        "timestamp": "2024-04-07T01:25:30.313586588Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2381,7 +2344,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329270604Z",
+        "timestamp": "2024-04-07T01:25:30.313642131Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2418,7 +2381,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329291513Z",
+        "timestamp": "2024-04-07T01:25:30.313660856Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2455,7 +2418,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329312192Z",
+        "timestamp": "2024-04-07T01:25:30.313675814Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2492,7 +2455,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329338401Z",
+        "timestamp": "2024-04-07T01:25:30.313690271Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2529,7 +2492,44 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:25:23.329362916Z",
+        "timestamp": "2024-04-07T01:25:30.313706151Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://diagoriente.beta.gouv.fr",
+        "matched-at": "https://diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:25:30.313725376Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -2571,8 +2571,8 @@
         "extracted-results": [
           "4b9d6023-c047-4c11-9a67-04a153db6f0b"
         ],
-        "ip": "20.190.190.129",
-        "timestamp": "2024-03-31T01:25:38.406772194Z",
+        "ip": "40.126.62.129",
+        "timestamp": "2024-04-07T01:25:45.130657733Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: login.microsoftonline.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://login.microsoftonline.com:443/diagoriente.beta.gouv.fr/v2.0/.well-known/openid-configuration'",
         "matcher-status": true
       },
@@ -2601,7 +2601,7 @@
         "host": "https://diagoriente.beta.gouv.fr",
         "matched-at": "https://diagoriente.beta.gouv.fr/robots.txt",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:27:47.321152482Z",
+        "timestamp": "2024-04-07T01:28:02.013618997Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://diagoriente.beta.gouv.fr/robots.txt'",
         "matcher-status": true
       },
@@ -2632,7 +2632,7 @@
           "Let's Encrypt"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:33:52.129387234Z",
+        "timestamp": "2024-04-07T01:34:16.943817981Z",
         "matcher-status": true
       },
       {
@@ -2662,7 +2662,7 @@
           "diagoriente.beta.gouv.fr"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:33:52.129518519Z",
+        "timestamp": "2024-04-07T01:34:16.943927605Z",
         "matcher-status": true
       },
       {
@@ -2693,7 +2693,7 @@
           "tls12"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:33:53.92770565Z",
+        "timestamp": "2024-04-07T01:34:18.662524535Z",
         "matcher-status": true
       },
       {
@@ -2724,7 +2724,7 @@
           "tls13"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:33:54.218136394Z",
+        "timestamp": "2024-04-07T01:34:18.978803681Z",
         "matcher-status": true
       }
     ],
@@ -2732,7 +2732,7 @@
       {
         "requestedUrl": "https://diagoriente.beta.gouv.fr/",
         "finalUrl": "https://diagoriente.beta.gouv.fr/",
-        "fetchTime": "2024-03-31T01:16:15.776Z",
+        "fetchTime": "2024-04-07T01:15:57.828Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -2743,7 +2743,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.4303735733032227
+            "score": 0.4303627014160156
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2795,53 +2795,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 7002,
+            "numericValue": 6895,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1935,
-                  "firstMeaningfulPaint": 1935,
-                  "largestContentfulPaint": 7547,
-                  "interactive": 7002,
-                  "speedIndex": 5450,
-                  "totalBlockingTime": 90,
-                  "maxPotentialFID": 223,
-                  "cumulativeLayoutShift": 0.02578125,
-                  "cumulativeLayoutShiftMainFrame": 0.02578125,
-                  "totalCumulativeLayoutShift": 0.02578125,
+                  "firstContentfulPaint": 1970,
+                  "firstMeaningfulPaint": 1970,
+                  "largestContentfulPaint": 7622,
+                  "interactive": 6895,
+                  "speedIndex": 4227,
+                  "totalBlockingTime": 73,
+                  "maxPotentialFID": 196,
+                  "cumulativeLayoutShift": 0,
+                  "cumulativeLayoutShiftMainFrame": 0,
+                  "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 564600096,
+                  "observedTimeOriginTs": 633505155,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 564600096,
-                  "observedFirstPaint": 957,
-                  "observedFirstPaintTs": 565556967,
-                  "observedFirstContentfulPaint": 957,
-                  "observedFirstContentfulPaintTs": 565556967,
-                  "observedFirstContentfulPaintAllFrames": 957,
-                  "observedFirstContentfulPaintAllFramesTs": 565556967,
-                  "observedFirstMeaningfulPaint": 957,
-                  "observedFirstMeaningfulPaintTs": 565556967,
-                  "observedLargestContentfulPaint": 1311,
-                  "observedLargestContentfulPaintTs": 565911481,
-                  "observedLargestContentfulPaintAllFrames": 1311,
-                  "observedLargestContentfulPaintAllFramesTs": 565911481,
-                  "observedTraceEnd": 4692,
-                  "observedTraceEndTs": 569292089,
-                  "observedLoad": 2383,
-                  "observedLoadTs": 566983181,
-                  "observedDomContentLoaded": 891,
-                  "observedDomContentLoadedTs": 565491364,
-                  "observedCumulativeLayoutShift": 0.02578125,
-                  "observedCumulativeLayoutShiftMainFrame": 0.02578125,
-                  "observedTotalCumulativeLayoutShift": 0.02578125,
-                  "observedFirstVisualChange": 910,
-                  "observedFirstVisualChangeTs": 565510096,
-                  "observedLastVisualChange": 1527,
-                  "observedLastVisualChangeTs": 566127096,
-                  "observedSpeedIndex": 1184,
-                  "observedSpeedIndexTs": 565784368
+                  "observedNavigationStartTs": 633505155,
+                  "observedFirstPaint": 934,
+                  "observedFirstPaintTs": 634439217,
+                  "observedFirstContentfulPaint": 934,
+                  "observedFirstContentfulPaintTs": 634439217,
+                  "observedFirstContentfulPaintAllFrames": 934,
+                  "observedFirstContentfulPaintAllFramesTs": 634439217,
+                  "observedFirstMeaningfulPaint": 934,
+                  "observedFirstMeaningfulPaintTs": 634439217,
+                  "observedLargestContentfulPaint": 1269,
+                  "observedLargestContentfulPaintTs": 634774208,
+                  "observedLargestContentfulPaintAllFrames": 1269,
+                  "observedLargestContentfulPaintAllFramesTs": 634774208,
+                  "observedTraceEnd": 3800,
+                  "observedTraceEndTs": 637305206,
+                  "observedLoad": 1335,
+                  "observedLoadTs": 634840579,
+                  "observedDomContentLoaded": 922,
+                  "observedDomContentLoadedTs": 634427292,
+                  "observedCumulativeLayoutShift": 0,
+                  "observedCumulativeLayoutShiftMainFrame": 0,
+                  "observedTotalCumulativeLayoutShift": 0,
+                  "observedFirstVisualChange": 936,
+                  "observedFirstVisualChangeTs": 634441155,
+                  "observedLastVisualChange": 1552,
+                  "observedLastVisualChangeTs": 635057155,
+                  "observedSpeedIndex": 1164,
+                  "observedSpeedIndexTs": 634668779
                 },
                 {
                   "lcpInvalidated": false
@@ -2863,19 +2863,19 @@
                   "numScripts": 16,
                   "numStylesheets": 2,
                   "numFonts": 5,
-                  "numTasks": 1021,
-                  "numTasksOver10ms": 4,
+                  "numTasks": 1093,
+                  "numTasksOver10ms": 5,
                   "numTasksOver25ms": 2,
-                  "numTasksOver50ms": 1,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver50ms": 0,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.4939999999999998,
-                  "throughput": 8073838.6304589575,
-                  "maxRtt": 80.691,
-                  "maxServerLatency": 107.364,
-                  "totalByteWeight": 1413619,
-                  "totalTaskTime": 384.32099999999934,
-                  "mainDocumentTransferSize": 19720
+                  "rtt": 5.798000000000002,
+                  "throughput": 16267497.105210287,
+                  "maxRtt": 86.481,
+                  "maxServerLatency": 104.35799999999999,
+                  "totalByteWeight": 1413676,
+                  "totalTaskTime": 305.70299999999844,
+                  "mainDocumentTransferSize": 19694
                 }
               ]
             }
@@ -2923,15 +2923,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://diagoriente.beta.gouv.fr",
-        "size": 1630.285,
-        "nodes": 609,
-        "requests": 62,
+        "size": 1640.889,
+        "nodes": 612,
+        "requests": 63,
         "grade": "D",
-        "score": 53,
-        "ges": 1.94,
-        "water": 2.91,
+        "score": 52,
+        "ges": 1.96,
+        "water": 2.94,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-31 01:12:34.990129",
+        "date": "2024-04-07 01:12:30.061018",
         "page_type": "website"
       }
     ],
@@ -2942,7 +2942,7 @@
     "summary": {
       "404": "A+",
       "httpGrade": "B+",
-      "uptime": 99.929,
+      "uptime": 100,
       "uptimeGrade": "A",
       "testsslExpireSoon": false,
       "testsslExpireDate": "2024-06-16T12:58:00.000Z",
@@ -2953,7 +2953,7 @@
       "trackersCount": 3,
       "zapCount": 7,
       "zapGrade": "D",
-      "lighthouse_performance": 0.4303735733032227,
+      "lighthouse_performance": 0.4303627014160156,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.91,
       "lighthouse_accessibilityGrade": "A",
@@ -2980,7 +2980,7 @@
     "http": {
       "url": "https://plateforme.diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Sun, 31 Mar 2024 01:15:25 GMT",
+      "end_time": "Sun, 07 Apr 2024 01:15:56 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2990,7 +2990,7 @@
         "Content-Encoding": "gzip",
         "Content-Length": "832",
         "Content-Type": "text/html",
-        "Date": "Sun, 31 Mar 2024 01:15:24 GMT",
+        "Date": "Sun, 07 Apr 2024 01:15:56 GMT",
         "Etag": "\"66018697-340\"",
         "Last-Modified": "Mon, 25 Mar 2024 14:13:43 GMT",
         "Server": "nginx",
@@ -3000,9 +3000,9 @@
         "X-Frame-Options": "DENY",
         "X-Xss-Protection": "1; mode=block"
       },
-      "scan_id": 49491479,
+      "scan_id": 49760799,
       "score": 75,
-      "start_time": "Sun, 31 Mar 2024 01:15:21 GMT",
+      "start_time": "Sun, 07 Apr 2024 01:15:53 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -3549,7 +3549,7 @@
         "ip": "plateforme.diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "OK",
-        "finding": "82 >= 30 days"
+        "finding": "75 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -3710,7 +3710,7 @@
         "ip": "plateforme.diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "INFO",
-        "finding": "1711847768"
+        "finding": "1712452597"
       },
       {
         "id": "HSTS_time",
@@ -4294,7 +4294,7 @@
         "ip": "plateforme.diagoriente.beta.gouv.fr/162.19.23.159",
         "port": "443",
         "severity": "INFO",
-        "finding": "96"
+        "finding": "93"
       }
     ],
     "thirdparties": {
@@ -4317,7 +4317,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1711847479764&ver=1.100.0"
+          "url": "https://eu.posthog.com/decide/?v=3&ip=1&_=1712452290269&ver=1.100.0"
         },
         {
           "type": "google fonts",
@@ -4330,6 +4330,22 @@
         {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v11/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIo.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v11/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWP.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v11/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWP.woff2",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -4363,7 +4379,7 @@
         "content-encoding": "gzip",
         "content-length": "832",
         "content-type": "text/html",
-        "date": "Sun, 31 Mar 2024 01:11:18 GMT",
+        "date": "Sun, 07 Apr 2024 01:11:29 GMT",
         "etag": "\"66018697-340\"",
         "last-modified": "Mon, 25 Mar 2024 14:13:43 GMT",
         "server": "nginx",
@@ -4432,7 +4448,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "172.217.4.42",
+          "ip": "142.250.190.74",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4486,7 +4502,7 @@
         },
         {
           "hostname": "eu.posthog.com",
-          "ip": "18.154.110.64",
+          "ip": "18.245.96.35",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4540,14 +4556,8 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.251.32.3",
+          "ip": "142.250.190.67",
           "geoip": {
-            "city": {
-              "geoname_id": 5133273,
-              "names": {
-                "en": "Queens"
-              }
-            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -4577,14 +4587,10 @@
               }
             },
             "location": {
-              "accuracy_radius": 500,
-              "latitude": 40.66,
-              "longitude": -73.839,
-              "metro_code": 501,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "11414"
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -4599,23 +4605,7 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 5128638,
-                "iso_code": "NY",
-                "names": {
-                  "de": "New York",
-                  "en": "New York",
-                  "es": "Nueva York",
-                  "fr": "New York",
-                  "ja": "ニューヨーク州",
-                  "pt-BR": "Nova Iorque",
-                  "ru": "Нью-Йорк",
-                  "zh-CN": "纽约州"
-                }
-              }
-            ]
+            }
           }
         },
         {
@@ -4875,7 +4865,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 31 Mar 2024 01:14:55",
+      "@generated": "Sun, 7 Apr 2024 01:15:25",
       "site": [
         {
           "@name": "https://plateforme.diagoriente.beta.gouv.fr",
@@ -5025,7 +5015,7 @@
         "type": "dns",
         "host": "plateforme.diagoriente.beta.gouv.fr.",
         "matched-at": "plateforme.diagoriente.beta.gouv.fr",
-        "timestamp": "2024-03-31T01:17:18.356329731Z",
+        "timestamp": "2024-04-07T01:17:47.374423538Z",
         "matcher-status": true
       },
       {
@@ -5065,34 +5055,7 @@
           "1; mode=block"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:17:37.384061676Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "nginx",
-        "type": "http",
-        "host": "https://plateforme.diagoriente.beta.gouv.fr",
-        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:15.879595698Z",
+        "timestamp": "2024-04-07T01:18:06.484512379Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -5119,192 +5082,34 @@
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:15.879634871Z",
+        "timestamp": "2024-04-07T01:18:45.084378994Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
       {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "template": "http/technologies/tech-detect.yaml",
+        "template-url": "https://templates.nuclei.sh/public/tech-detect",
+        "template-id": "tech-detect",
+        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
         "info": {
-          "name": "HTTP Missing Security Headers",
+          "name": "Wappalyzer Technology Detection",
           "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
+            "hakluke"
           ],
           "tags": [
-            "misconfig",
-            "headers",
-            "generic"
+            "tech"
           ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
           "severity": "info",
           "metadata": {
             "max-request": 1
           }
         },
-        "matcher-name": "cross-origin-opener-policy",
+        "matcher-name": "nginx",
         "type": "http",
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876522592Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://plateforme.diagoriente.beta.gouv.fr",
-        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.87658033Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://plateforme.diagoriente.beta.gouv.fr",
-        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876598404Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://plateforme.diagoriente.beta.gouv.fr",
-        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876613422Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://plateforme.diagoriente.beta.gouv.fr",
-        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
-        "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876625675Z",
+        "timestamp": "2024-04-07T01:18:45.084447974Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -5341,7 +5146,7 @@
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876641445Z",
+        "timestamp": "2024-04-07T01:18:59.979110171Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -5378,7 +5183,7 @@
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876661612Z",
+        "timestamp": "2024-04-07T01:18:59.979176326Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -5415,7 +5220,192 @@
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:18:30.876677422Z",
+        "timestamp": "2024-04-07T01:18:59.979197876Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://plateforme.diagoriente.beta.gouv.fr",
+        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:18:59.979213916Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://plateforme.diagoriente.beta.gouv.fr",
+        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:18:59.979229506Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://plateforme.diagoriente.beta.gouv.fr",
+        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:18:59.979260564Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "permissions-policy",
+        "type": "http",
+        "host": "https://plateforme.diagoriente.beta.gouv.fr",
+        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:18:59.979279269Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://plateforme.diagoriente.beta.gouv.fr",
+        "matched-at": "https://plateforme.diagoriente.beta.gouv.fr",
+        "ip": "162.19.23.159",
+        "timestamp": "2024-04-07T01:18:59.97929557Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -5455,7 +5445,7 @@
         "host": "https://plateforme.diagoriente.beta.gouv.fr",
         "matched-at": "https://plateforme.diagoriente.beta.gouv.fr/",
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:09.503871795Z",
+        "timestamp": "2024-04-07T01:19:38.96663122Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: plateforme.diagoriente.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://plateforme.diagoriente.beta.gouv.fr/'",
         "matcher-status": true
       },
@@ -5486,7 +5476,7 @@
           "Let's Encrypt"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:53.407793924Z",
+        "timestamp": "2024-04-07T01:20:22.940504557Z",
         "matcher-status": true
       },
       {
@@ -5516,7 +5506,7 @@
           "plateforme.diagoriente.beta.gouv.fr"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:53.407905954Z",
+        "timestamp": "2024-04-07T01:20:22.940659819Z",
         "matcher-status": true
       },
       {
@@ -5547,7 +5537,7 @@
           "tls12"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:54.980893743Z",
+        "timestamp": "2024-04-07T01:20:24.516813972Z",
         "matcher-status": true
       },
       {
@@ -5578,17 +5568,18 @@
           "tls13"
         ],
         "ip": "162.19.23.159",
-        "timestamp": "2024-03-31T01:19:55.355948375Z",
+        "timestamp": "2024-04-07T01:20:24.860623612Z",
         "matcher-status": true
       }
     ],
     "lhr": [
       {
         "requestedUrl": "https://plateforme.diagoriente.beta.gouv.fr/",
-        "finalUrl": "https://authentification.diagoriente.beta.gouv.fr/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=ctUv3Fd7HmCIXx0G&nonce=oFcJSx4IhI8g&code_challenge=x92tUa5rM_nLOEfb4v575dayf-QYseNAf-myp7h8ZmI&code_challenge_method=S256",
-        "fetchTime": "2024-03-31T01:15:09.212Z",
+        "finalUrl": "https://authentification.diagoriente.beta.gouv.fr/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=mncGyGMu6isMSJFD&nonce=xUorZf1l2Uj7&code_challenge=dgUXLsjrEAdlFvzUcrm13caixpjrycWM3KXvA7R3W9Q&code_challenge_method=S256",
+        "fetchTime": "2024-04-07T01:15:39.749Z",
         "runWarnings": [
-          "The page may not be loading as expected because your test URL (https://plateforme.diagoriente.beta.gouv.fr/) was redirected to https://authentification.diagoriente.beta.gouv.fr/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=ctUv3Fd7HmCIXx0G&nonce=oFcJSx4IhI8g&code_challenge=x92tUa5rM_nLOEfb4v575dayf-QYseNAf-myp7h8ZmI&code_challenge_method=S256. Try testing the second URL directly."
+          "The page may not be loading as expected because your test URL (https://plateforme.diagoriente.beta.gouv.fr/) was redirected to https://authentification.diagoriente.beta.gouv.fr/realms/polaris-prod/protocol/openid-connect/auth?client_id=orion-fe-webapp&redirect_uri=https%3A%2F%2Fplateforme.diagoriente.beta.gouv.fr%2Fauth%2Fcallback&scope=openid%20profile%20email%20offline_access&response_type=code&state=mncGyGMu6isMSJFD&nonce=xUorZf1l2Uj7&code_challenge=dgUXLsjrEAdlFvzUcrm13caixpjrycWM3KXvA7R3W9Q&code_challenge_method=S256. Try testing the second URL directly.",
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
         ],
         "categories": {
           "performance": {
@@ -5651,53 +5642,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 7710,
+            "numericValue": 7694,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 7710,
-                  "firstMeaningfulPaint": 7710,
-                  "largestContentfulPaint": 8114,
-                  "interactive": 7710,
-                  "speedIndex": 7710,
+                  "firstContentfulPaint": 7694,
+                  "firstMeaningfulPaint": 7694,
+                  "largestContentfulPaint": 8202,
+                  "interactive": 7694,
+                  "speedIndex": 7694,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 495814262,
+                  "observedTimeOriginTs": 486500165,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 495814262,
-                  "observedFirstPaint": 786,
-                  "observedFirstPaintTs": 496599995,
-                  "observedFirstContentfulPaint": 786,
-                  "observedFirstContentfulPaintTs": 496599995,
-                  "observedFirstContentfulPaintAllFrames": 786,
-                  "observedFirstContentfulPaintAllFramesTs": 496599995,
-                  "observedFirstMeaningfulPaint": 802,
-                  "observedFirstMeaningfulPaintTs": 496616523,
-                  "observedLargestContentfulPaint": 786,
-                  "observedLargestContentfulPaintTs": 496599995,
-                  "observedLargestContentfulPaintAllFrames": 786,
-                  "observedLargestContentfulPaintAllFramesTs": 496599995,
-                  "observedTraceEnd": 3184,
-                  "observedTraceEndTs": 498998010,
-                  "observedLoad": 759,
-                  "observedLoadTs": 496573228,
-                  "observedDomContentLoaded": 347,
-                  "observedDomContentLoadedTs": 496161167,
+                  "observedNavigationStartTs": 486500165,
+                  "observedFirstPaint": 802,
+                  "observedFirstPaintTs": 487302659,
+                  "observedFirstContentfulPaint": 802,
+                  "observedFirstContentfulPaintTs": 487302659,
+                  "observedFirstContentfulPaintAllFrames": 802,
+                  "observedFirstContentfulPaintAllFramesTs": 487302659,
+                  "observedFirstMeaningfulPaint": 817,
+                  "observedFirstMeaningfulPaintTs": 487317572,
+                  "observedLargestContentfulPaint": 802,
+                  "observedLargestContentfulPaintTs": 487302659,
+                  "observedLargestContentfulPaintAllFrames": 802,
+                  "observedLargestContentfulPaintAllFramesTs": 487302659,
+                  "observedTraceEnd": 3205,
+                  "observedTraceEndTs": 489705424,
+                  "observedLoad": 896,
+                  "observedLoadTs": 487396432,
+                  "observedDomContentLoaded": 345,
+                  "observedDomContentLoadedTs": 486844812,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 215,
-                  "observedFirstVisualChangeTs": 496029262,
-                  "observedLastVisualChange": 1782,
-                  "observedLastVisualChangeTs": 497596262,
-                  "observedSpeedIndex": 518,
-                  "observedSpeedIndexTs": 496332146
+                  "observedFirstVisualChange": 213,
+                  "observedFirstVisualChangeTs": 486713165,
+                  "observedLastVisualChange": 1796,
+                  "observedLastVisualChangeTs": 488296165,
+                  "observedSpeedIndex": 523,
+                  "observedSpeedIndexTs": 487023352
                 },
                 {
                   "lcpInvalidated": false
@@ -5719,18 +5710,18 @@
                   "numScripts": 3,
                   "numStylesheets": 10,
                   "numFonts": 3,
-                  "numTasks": 516,
+                  "numTasks": 487,
                   "numTasksOver10ms": 5,
                   "numTasksOver25ms": 2,
                   "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 0,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.85,
-                  "throughput": 9066925.831552738,
-                  "maxRtt": 102.352,
-                  "maxServerLatency": 110.93900000000002,
-                  "totalByteWeight": 928273,
-                  "totalTaskTime": 271.6979999999994,
+                  "rtt": 1.8970000000000002,
+                  "throughput": 9082951.185829094,
+                  "maxRtt": 102.131,
+                  "maxServerLatency": 117.05000000000001,
+                  "totalByteWeight": 928197,
+                  "totalTaskTime": 346.19999999999925,
                   "mainDocumentTransferSize": 1070
                 }
               ]
@@ -5781,15 +5772,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://plateforme.diagoriente.beta.gouv.fr",
-        "size": 952.096,
+        "size": 934.764,
         "nodes": 77,
-        "requests": 27,
+        "requests": 26,
         "grade": "A",
         "score": 84,
         "ges": 1.32,
         "water": 1.98,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-31 01:12:23.937431",
+        "date": "2024-04-07 01:12:34.753344",
         "page_type": null
       }
     ],
@@ -5808,7 +5799,7 @@
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "C",
-      "trackersCount": 8,
+      "trackersCount": 10,
       "zapCount": 5,
       "zapGrade": "D",
       "lighthouse_performance": 1,
@@ -5838,7 +5829,7 @@
     "http": {
       "url": "https://app.diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Sun, 31 Mar 2024 01:15:13 GMT",
+      "end_time": "Sun, 07 Apr 2024 01:14:54 GMT",
       "grade": "B+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -5846,7 +5837,7 @@
         "Content-Encoding": "gzip",
         "Content-Security-Policy": "object-src 'none'; default-src 'self'; img-src * data:;frame-ancestors 'self'; frame-src 'self' https://diagoriente.beta.gouv.fr; style-src 'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; style-src-elem  'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; script-src 'unsafe-inline' 'self' *.diagoriente.beta.gouv.fr blob:; connect-src 'self' *.diagoriente.beta.gouv.fr https://sentry.diagomonito.net/",
         "Content-Type": "text/html",
-        "Date": "Sun, 31 Mar 2024 01:15:12 GMT",
+        "Date": "Sun, 07 Apr 2024 01:14:53 GMT",
         "Etag": "\"65df3a26-152e\"",
         "Last-Modified": "Wed, 28 Feb 2024 13:50:30 GMT",
         "Server": "nginx/1.25.4",
@@ -5857,9 +5848,9 @@
         "X-Frame-Options": "DENY",
         "X-Xss-Protection": "1; mode=block"
       },
-      "scan_id": 49491460,
+      "scan_id": 49760768,
       "score": 80,
-      "start_time": "Sun, 31 Mar 2024 01:15:09 GMT",
+      "start_time": "Sun, 07 Apr 2024 01:14:50 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -6457,7 +6448,7 @@
         "ip": "app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "OK",
-        "finding": "51 >= 30 days"
+        "finding": "44 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -6618,7 +6609,7 @@
         "ip": "app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "1711847744"
+        "finding": "1712452536"
       },
       {
         "id": "HSTS_time",
@@ -7202,7 +7193,7 @@
         "ip": "app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "81"
+        "finding": "95"
       }
     ],
     "thirdparties": {
@@ -7222,7 +7213,7 @@
         "content-length": "2671",
         "content-security-policy": "object-src 'none'; default-src 'self'; img-src * data:;frame-ancestors 'self'; frame-src 'self' https://diagoriente.beta.gouv.fr; style-src 'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; style-src-elem  'self' https://unpkg.com/leaflet@1.6.0/dist/leaflet.css 'unsafe-inline'; script-src 'unsafe-inline' 'self' *.diagoriente.beta.gouv.fr blob:; connect-src 'self' *.diagoriente.beta.gouv.fr https://sentry.diagomonito.net/",
         "content-type": "text/html",
-        "date": "Sun, 31 Mar 2024 01:11:17 GMT",
+        "date": "Sun, 07 Apr 2024 01:11:17 GMT",
         "etag": "\"65df3a26-152e\"",
         "last-modified": "Wed, 28 Feb 2024 13:50:30 GMT",
         "server": "nginx/1.25.4",
@@ -7291,7 +7282,7 @@
         },
         {
           "hostname": "unpkg.com",
-          "ip": "104.16.123.175",
+          "ip": "104.17.247.203",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -7530,7 +7521,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 31 Mar 2024 01:14:42",
+      "@generated": "Sun, 7 Apr 2024 01:14:24",
       "site": [
         {
           "@name": "https://app.diagoriente.beta.gouv.fr",
@@ -7649,41 +7640,6 @@
     },
     "nuclei": [
       {
-        "template": "dns/dns-saas-service-detection.yaml",
-        "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-        "template-id": "dns-saas-service-detection",
-        "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-        "info": {
-          "name": "DNS SaaS Service Detection",
-          "author": [
-            "noah @thesubtlety",
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "service"
-          ],
-          "description": "A CNAME DNS record was discovered",
-          "reference": [
-            "https://ns1.com/resources/cname",
-            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "dns",
-        "host": "app.diagoriente.beta.gouv.fr.",
-        "matched-at": "app.diagoriente.beta.gouv.fr",
-        "extracted-results": [
-          "k-in.diagoriente.beta.gouv.fr."
-        ],
-        "timestamp": "2024-03-31T01:16:52.057423772Z",
-        "matcher-status": true
-      },
-      {
         "template": "dns/caa-fingerprint.yaml",
         "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
         "template-id": "caa-fingerprint",
@@ -7715,7 +7671,42 @@
         "type": "dns",
         "host": "app.diagoriente.beta.gouv.fr.",
         "matched-at": "app.diagoriente.beta.gouv.fr",
-        "timestamp": "2024-03-31T01:16:52.377017008Z",
+        "timestamp": "2024-04-07T01:16:46.114783452Z",
+        "matcher-status": true
+      },
+      {
+        "template": "dns/dns-saas-service-detection.yaml",
+        "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+        "template-id": "dns-saas-service-detection",
+        "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+        "info": {
+          "name": "DNS SaaS Service Detection",
+          "author": [
+            "noah @thesubtlety",
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "service"
+          ],
+          "description": "A CNAME DNS record was discovered",
+          "reference": [
+            "https://ns1.com/resources/cname",
+            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+          ],
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "type": "dns",
+        "host": "app.diagoriente.beta.gouv.fr.",
+        "matched-at": "app.diagoriente.beta.gouv.fr",
+        "extracted-results": [
+          "k-in.diagoriente.beta.gouv.fr."
+        ],
+        "timestamp": "2024-04-07T01:16:47.209936736Z",
         "matcher-status": true
       },
       {
@@ -7755,7 +7746,7 @@
           "1; mode=block"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:17:32.381813592Z",
+        "timestamp": "2024-04-07T01:17:36.276883226Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -7787,7 +7778,7 @@
           "nginx/1.25.4"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:17:32.385631753Z",
+        "timestamp": "2024-04-07T01:17:36.280677995Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -7814,81 +7805,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:21.481427642Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649765433Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649813593Z",
+        "timestamp": "2024-04-07T01:19:41.276002871Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -7925,7 +7842,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649832128Z",
+        "timestamp": "2024-04-07T01:20:23.652811176Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -7962,7 +7879,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649846505Z",
+        "timestamp": "2024-04-07T01:20:23.652869274Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -7999,7 +7916,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649862405Z",
+        "timestamp": "2024-04-07T01:20:23.652886256Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -8036,7 +7953,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.649877553Z",
+        "timestamp": "2024-04-07T01:20:23.652898769Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -8073,7 +7990,81 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:19:58.64989224Z",
+        "timestamp": "2024-04-07T01:20:23.653046915Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:20:23.653062233Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:20:23.653074697Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -8102,7 +8093,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr/robots.txt",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:20:46.432331586Z",
+        "timestamp": "2024-04-07T01:21:11.149932652Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr/robots.txt'",
         "matcher-status": true
       },
@@ -8142,7 +8133,7 @@
         "host": "https://app.diagoriente.beta.gouv.fr",
         "matched-at": "https://app.diagoriente.beta.gouv.fr/",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:21:35.360453208Z",
+        "timestamp": "2024-04-07T01:22:14.059393022Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: app.diagoriente.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.diagoriente.beta.gouv.fr/'",
         "matcher-status": true
       },
@@ -8173,7 +8164,7 @@
           "Let's Encrypt"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:23:18.50842937Z",
+        "timestamp": "2024-04-07T01:24:10.967429327Z",
         "matcher-status": true
       },
       {
@@ -8203,7 +8194,7 @@
           "app.diagoriente.beta.gouv.fr"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:23:18.508552169Z",
+        "timestamp": "2024-04-07T01:24:10.967549282Z",
         "matcher-status": true
       },
       {
@@ -8234,7 +8225,7 @@
           "tls12"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:23:20.746230963Z",
+        "timestamp": "2024-04-07T01:24:13.148292131Z",
         "matcher-status": true
       },
       {
@@ -8265,7 +8256,7 @@
           "tls13"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:23:21.548873559Z",
+        "timestamp": "2024-04-07T01:24:14.369401915Z",
         "matcher-status": true
       }
     ],
@@ -8273,7 +8264,7 @@
       {
         "requestedUrl": "https://app.diagoriente.beta.gouv.fr/",
         "finalUrl": "https://app.diagoriente.beta.gouv.fr/",
-        "fetchTime": "2024-03-31T01:14:56.746Z",
+        "fetchTime": "2024-04-07T01:14:38.266Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -8284,7 +8275,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.9055795669555664
+            "score": 0.9055797576904296
           },
           "accessibility": {
             "title": "Accessibility",
@@ -8336,53 +8327,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3914,
+            "numericValue": 4073,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3047,
-                  "firstMeaningfulPaint": 3879,
-                  "largestContentfulPaint": 7446,
-                  "interactive": 3914,
-                  "speedIndex": 3760,
-                  "totalBlockingTime": 548,
-                  "maxPotentialFID": 354,
+                  "firstContentfulPaint": 3286,
+                  "firstMeaningfulPaint": 4073,
+                  "largestContentfulPaint": 4449,
+                  "interactive": 4073,
+                  "speedIndex": 3959,
+                  "totalBlockingTime": 321,
+                  "maxPotentialFID": 215,
                   "cumulativeLayoutShift": 0.8811542561848958,
                   "cumulativeLayoutShiftMainFrame": 0.8811542561848958,
                   "totalCumulativeLayoutShift": 0.8811542561848958,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 474471303,
+                  "observedTimeOriginTs": 419128322,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 474471303,
-                  "observedFirstPaint": 1003,
-                  "observedFirstPaintTs": 475474781,
-                  "observedFirstContentfulPaint": 1003,
-                  "observedFirstContentfulPaintTs": 475474781,
-                  "observedFirstContentfulPaintAllFrames": 1003,
-                  "observedFirstContentfulPaintAllFramesTs": 475474781,
-                  "observedFirstMeaningfulPaint": 1290,
-                  "observedFirstMeaningfulPaintTs": 475761498,
-                  "observedLargestContentfulPaint": 1263,
-                  "observedLargestContentfulPaintTs": 475734337,
-                  "observedLargestContentfulPaintAllFrames": 1263,
-                  "observedLargestContentfulPaintAllFramesTs": 475734337,
-                  "observedTraceEnd": 4658,
-                  "observedTraceEndTs": 479129534,
-                  "observedLoad": 872,
-                  "observedLoadTs": 475343295,
-                  "observedDomContentLoaded": 872,
-                  "observedDomContentLoadedTs": 475343257,
+                  "observedNavigationStartTs": 419128322,
+                  "observedFirstPaint": 1220,
+                  "observedFirstPaintTs": 420348817,
+                  "observedFirstContentfulPaint": 1220,
+                  "observedFirstContentfulPaintTs": 420348817,
+                  "observedFirstContentfulPaintAllFrames": 1220,
+                  "observedFirstContentfulPaintAllFramesTs": 420348817,
+                  "observedFirstMeaningfulPaint": 1528,
+                  "observedFirstMeaningfulPaintTs": 420656648,
+                  "observedLargestContentfulPaint": 1365,
+                  "observedLargestContentfulPaintTs": 420493627,
+                  "observedLargestContentfulPaintAllFrames": 1365,
+                  "observedLargestContentfulPaintAllFramesTs": 420493627,
+                  "observedTraceEnd": 4932,
+                  "observedTraceEndTs": 424060805,
+                  "observedLoad": 1069,
+                  "observedLoadTs": 420197342,
+                  "observedDomContentLoaded": 1069,
+                  "observedDomContentLoadedTs": 420197303,
                   "observedCumulativeLayoutShift": 0.8811542561848958,
                   "observedCumulativeLayoutShiftMainFrame": 0.8811542561848958,
                   "observedTotalCumulativeLayoutShift": 0.8811542561848958,
-                  "observedFirstVisualChange": 1009,
-                  "observedFirstVisualChangeTs": 475480303,
-                  "observedLastVisualChange": 1476,
-                  "observedLastVisualChangeTs": 475947303,
-                  "observedSpeedIndex": 1253,
-                  "observedSpeedIndexTs": 475724470
+                  "observedFirstVisualChange": 1221,
+                  "observedFirstVisualChangeTs": 420349322,
+                  "observedLastVisualChange": 1554,
+                  "observedLastVisualChangeTs": 420682322,
+                  "observedSpeedIndex": 1384,
+                  "observedSpeedIndexTs": 420512346
                 },
                 {
                   "lcpInvalidated": false
@@ -8404,18 +8395,18 @@
                   "numScripts": 5,
                   "numStylesheets": 2,
                   "numFonts": 2,
-                  "numTasks": 541,
-                  "numTasksOver10ms": 5,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 1,
+                  "numTasks": 518,
+                  "numTasksOver10ms": 6,
+                  "numTasksOver25ms": 2,
+                  "numTasksOver50ms": 1,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.8,
-                  "throughput": 22235705.29545541,
-                  "maxRtt": 86.437,
-                  "maxServerLatency": 17.037000000000006,
-                  "totalByteWeight": 1543611,
-                  "totalTaskTime": 395.27099999999865,
+                  "rtt": 1.905,
+                  "throughput": 19787842.27258459,
+                  "maxRtt": 102.51700000000001,
+                  "maxServerLatency": 14.114999999999995,
+                  "totalByteWeight": 1543610,
+                  "totalTaskTime": 267.67099999999897,
                   "mainDocumentTransferSize": 3253
                 }
               ]
@@ -8465,15 +8456,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://app.diagoriente.beta.gouv.fr",
-        "size": 1665.022,
+        "size": 1664.564,
         "nodes": 181,
-        "requests": 30,
+        "requests": 28,
         "grade": "B",
         "score": 77,
         "ges": 1.46,
         "water": 2.19,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-31 01:12:18.450919",
+        "date": "2024-04-07 01:12:19.869710",
         "page_type": null
       }
     ],
@@ -8495,7 +8486,7 @@
       "trackersCount": 1,
       "zapCount": 6,
       "zapGrade": "D",
-      "lighthouse_performance": 0.9055795669555664,
+      "lighthouse_performance": 0.9055797576904296,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.88,
       "lighthouse_accessibilityGrade": "A",
@@ -8522,7 +8513,7 @@
     "http": {
       "url": "https://web-app.diagoriente.beta.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Sun, 31 Mar 2024 01:32:12 GMT",
+      "end_time": "Sun, 07 Apr 2024 01:32:36 GMT",
       "grade": "C-",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -8531,19 +8522,19 @@
         "Cache-Control": "max-age=0, no-store, no-cache, must-revalidate",
         "Content-Length": "1200",
         "Content-Type": "text/html",
-        "Date": "Sun, 31 Mar 2024 01:32:11 GMT",
+        "Date": "Sun, 07 Apr 2024 01:32:34 GMT",
         "Etag": "24b1dc6f10cd5e4b4dc93e4ecc55eafd",
         "Last-Modified": "Thu, 25 Jan 2024 10:28:33 GMT",
         "X-Frame-Options": "DENY",
-        "X-Iplb-Instance": "54403",
-        "X-Iplb-Request-Id": "A2133558:7DC6_3626E64B:0050_6608BD1B_F220F09F:189E",
-        "X-Openstack-Request-Id": "txdfa8fa7e885d48b198ea9-006608bd1b",
+        "X-Iplb-Instance": "54402",
+        "X-Iplb-Request-Id": "A2133558:FB00_3626E64B:0050_6611F7B2_71C96D1:6D63",
+        "X-Openstack-Request-Id": "txb1d65c2e59e74ad789ee8-006611f7b2",
         "X-Timestamp": "1706178512.81567",
-        "X-Trans-Id": "txdfa8fa7e885d48b198ea9-006608bd1b"
+        "X-Trans-Id": "txb1d65c2e59e74ad789ee8-006611f7b2"
       },
-      "scan_id": 49491879,
+      "scan_id": 49762108,
       "score": 45,
-      "start_time": "Sun, 31 Mar 2024 01:32:09 GMT",
+      "start_time": "Sun, 07 Apr 2024 01:32:32 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -9046,7 +9037,7 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "043F6BE8D837AD0E5BDCC760B3609C42859E"
+        "finding": "04C027CF77E68E31642DD59C53DD9DCF8077"
       },
       {
         "id": "cert_serialNumberLen",
@@ -9060,21 +9051,21 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "C9D8BFF81CDAFBF17B75F66A64115B409CA62B13"
+        "finding": "DFF981F068E283CD0F3198892077BFA309A149E8"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "7AAA4EF090B4237FC8E80C192BD21587C7EEA8DC91C9E85752BF2F9BCCE870FE"
+        "finding": "AE28948C859E8FDC287569F1CE60F318E703E782908FCEDB15267D5A47840B08"
       },
       {
         "id": "cert",
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIGWDCCBUCgAwIBAgISBD9r6Ng3rQ5b3Mdgs2CcQoWeMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAzMjUxMjExMThaFw0yNDA2MjMxMjExMTdaMCsxKTAnBgNVBAMTIHdlYi1hcHAuZGlhZ29yaWVudGUuYmV0YS5nb3V2LmZyMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuU49Q6mTkLUKYeICgfD6cR1pjb0pSNyDmhKIAtWb+auwHAowcqRC171oSkgm1vjC2KDjom68h751PdoIZ+PGwdEYNV0aErBsXbUyXaqsQVJJ71iVQrbTiCHF+eb6q1Ax+/GC0hmgA2lzolhSxaonpATKiH5sJw+rZLW6PkTeh5FvaNWR6hhifqcwwW7d2Z+FkfwYYJQfQHed+cmnfHfFPUMYwvpCQNDluD4U2YpFs5bK26GCCCLwKCWs+PHzZQSHyqsM7pYD9/KUwufBRwVs5L/hQGZQVJKUSz6rFf8gDFIdtjsP3FMiscprh6TtnTHaonOM03EA2zu/kJwdqmzBDw9zo1lj9S7207UH+LZlkrOfFj/qUfTlO1rzDn0XC4Xr9YM8ipWe4ZyvEeNDqv2MxMsFoWdqnrGNs6dGzwLpaHMy7t/N8KlU/lKQtPu/T2O/ctAl+wK5YwWB7tQMjdsr7x+XhX8JZOWcPiI4XgoaTpRi/VSziVJhuS9/cj+8jtvMD50HLGKoPZMK6lhJsVsH2WFxlPbXBN5Rkwfr+YD9U+1ER8giCLU/jNjLYYc/NQJkFFeRknsLcpoI5zXRVYdJeBNZG2uEetEUo+OYA8wjmuuGKMR3YokqWNZIm1huXXY4nLx4o5bsyRti1ys7phA9Yx8YvoqRxchC8XNfFjB5xqECAwEAAaOCAm0wggJpMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU6LkW88xnsD/NyNGzI0JL//EOufIwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wdgYDVR0RBG8wbYIfY3YuMWpldW5lMXNvbHV0aW9uLmJldGEuZ291di5mcoIob3JpZW50YXRpb24uMWpldW5lMXNvbHV0aW9uLmJldGEuZ291di5mcoIgd2ViLWFwcC5kaWFnb3JpZW50ZS5iZXRhLmdvdXYuZnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAY51vJvEAAAEAwBHMEUCIQCCKlUY8U8PQV4Atyjrw6UJa2XCUWg4vyB6Ugk5IGyo9AIgJ09cdicCcebvOFmyhOascm4RVoDxWtiZUDchOOt4dPoAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAY51vKO2AAAEAwBHMEUCIQCBzJ9n7ttnYyhgpqxgfvqaeQ9aNHu8KcLZjoaX7T+IqgIgTnFWz3HXiari7mYEcvFr4vk20wPzbkInZ+2Q0aINdbswDQYJKoZIhvcNAQELBQADggEBAIXQywZq5/p4Z+teA0SywIg21H5o93iUQi1jtjAUrZOaD3yOkOKQhAFilbVJ3sA/e5Qt/ZRHb/QiLk8sH/6dK1YBYsKiSgoXQjO5QZfc8kCZfxeBMWce5NNELJTPREXUVdWW7yctIiFYizi9RfsM/ubxRKNbLj8F1zgrXA+vsMBfoUVgeNtQqSP4imFODruBsM5+txq9lGh1fcw+NDLkBwmsmYGLv2Jxy0/1nkVxEAEE5DQ3CdMiIJzkjFLikmiR0vFtYtAQKpcHcGEAogoqxER/OKxeo8ZpjuwOTkB06gZsKPXxSmrW0xwrXoJcT2pf2zK40CndAFW87XVyrG71h3k=\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIGlzCCBX+gAwIBAgISBMAnz3fmjjFkLdWcU92dz4B3MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAzMzAxMjExMzBaFw0yNDA2MjgxMjExMjlaMCsxKTAnBgNVBAMTIHdlYi1hcHAuZGlhZ29yaWVudGUuYmV0YS5nb3V2LmZyMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA1wYqAIdHIxiwV5fbrnclIonpiHAqoecqHH1pTXMV6utrlWkyXF7VKqKUKSGtLnIIhKtTNF899WJE7GC9fIkao/4Uc3BGZwkW/kW9hEbhYImizL+rX5gkvgiD+dtwVntM9hR1MACwAoyN6+bDzbBuM+Zyu9JB/hJK8V0uQCbe1Q3iawrkGLbxUMJf7+6jjluGoL7hRiD398sJezXxw5Co0e5DPiAPhyK41wrCpNRPZR5rPtEsOWNpnhAoZMmlvldyk7LUhFsin/uJynzNN2lhqmpb4N35tkVowNWbC+BW15fJMrPKcot1/kNvzx+LujbtOY9IWomOYRJpKtMCI2piGHSAAQs6sc2epbFkJXdCmqaAnUNWaDh/3JkmSzvBeAirckVn39HXNdHg3VPHRtV/FzjUlqd3wAzwwnI+t/w8PkQXomTpQuB9ymCHHApPgDPpx1ZsgeaA3Yd7zbeJqeRWF8e9vDOPSXIlMqWjuhkdtisbJIM9pOQIfqXqFzuaKPnCNeEc6x2HdRQRIRo72CtfwYpajDrUE9Izez/ZdzUc49of9k2uswrB1Xr/6gkf7CFkOKeVh1Q6fDeiqcn/Uc4jJQvP51lpF85Hky4qyGYrpijaM1UddjDZPrjfQJI/yoJcaLrlwoNAiwfBZRpHiTWQ/dJwhXYOK0YZQ/DmVOQWjYECAwEAAaOCAqwwggKoMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQULQw1SblYv7sdkq+ptHeN9+lILk8wHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wgbUGA1UdEQSBrTCBqoIdY2Q5My5kaWFnb3JpZW50ZS5iZXRhLmdvdXYuZnKCHGNlai5kaWFnb3JpZW50ZS5iZXRhLmdvdXYuZnKCH2N2LjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnKCKG9yaWVudGF0aW9uLjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnKCIHdlYi1hcHAuZGlhZ29yaWVudGUuYmV0YS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAO1N3dT4tuYBOizBbBv5AO2fYT8P0x70ADS1yb+H61BcAAAGOj3yXaAAABAMARzBFAiEAu8Hm6uMQAylst8nzmmPoKm8pPsriidrnxnULAvhMS6ECICNcXHIxVZ0QuG3oJ552g3zotmRZjWu0tG2jZ/ad/tqSAHUAouK/1h7eLy8HoNZObTen3GVDsMa1LqLat4r4mm31F9gAAAGOj3yXkgAABAMARjBEAiBxJu7TUeXBZsfurwJ27sEbG3Ve9ElQB9pAp7VhsabrJwIgJx7vARkc8wuBwOu/6Dq34Bhh2NhdrdloTAqt0al7x5YwDQYJKoZIhvcNAQELBQADggEBAGkPkBDcGr7ymlmieIjIX92pb5QP14wKFptThuqDYi/JBBBpNbJb8bkiu18zVsMFWqB/JNA39H+SK+WNGrHhzQkssnWnEuEYijic8TDUWc0FZR2rPvclC2qaXaxDVg1FNA7itimdWFYeIWnRAWG9W2JspO/4hs62kbSVNobx12OhMadp5VXqJivLIJDplnCE0ZhYDl5uGVDelzrMAU7BYzDWrfNBFNYLCsiF/EkWJBfefT6OKSHNATlAroctLxO3FD8OKrlVHIiad/aIBpIL6LLLcufA6hb3sBCheuC8BOM/QT2n4Aevs2i4HJqAYzxXLaje2RVlJiLSvcjAsJqArrE=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -9095,7 +9086,7 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "cv.1jeune1solution.beta.gouv.fr orientation.1jeune1solution.beta.gouv.fr web-app.diagoriente.beta.gouv.fr"
+        "finding": "cd93.diagoriente.beta.gouv.fr cej.diagoriente.beta.gouv.fr cv.1jeune1solution.beta.gouv.fr orientation.1jeune1solution.beta.gouv.fr web-app.diagoriente.beta.gouv.fr"
       },
       {
         "id": "cert_trust",
@@ -9123,21 +9114,21 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "OK",
-        "finding": "84 >= 30 days"
+        "finding": "82 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "2024-03-25 12:11"
+        "finding": "2024-03-30 12:11"
       },
       {
         "id": "cert_notAfter",
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "OK",
-        "finding": "2024-06-23 12:11"
+        "finding": "2024-06-28 12:11"
       },
       {
         "id": "cert_extlifeSpan",
@@ -9284,7 +9275,7 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "1711848779"
+        "finding": "1712453589"
       },
       {
         "id": "HSTS",
@@ -9464,7 +9455,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7AAA4EF090B4237FC8E80C192BD21587C7EEA8DC91C9E85752BF2F9BCCE870FE"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=AE28948C859E8FDC287569F1CE60F318E703E782908FCEDB15267D5A47840B08"
       },
       {
         "id": "LOGJAM",
@@ -9870,7 +9861,7 @@
         "ip": "web-app.diagoriente.beta.gouv.fr/135.125.83.158",
         "port": "443",
         "severity": "INFO",
-        "finding": "107"
+        "finding": "79"
       }
     ],
     "thirdparties": {
@@ -9901,7 +9892,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1711848536388&ver=1.68.5"
+          "url": "https://posthog.diagomonito.net/decide/?v=3&ip=1&_=1712453362777&ver=1.68.5"
         },
         {
           "type": "unknown",
@@ -9938,6 +9929,10 @@
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
           }
+        },
+        {
+          "type": "unknown",
+          "url": "https://sentry.diagomonito.net/api/3/envelope/?sentry_key=c2ae4c61d3eb44d19d4af45b0d09f460&sentry_version=7&sentry_client=sentry.javascript.react%2F7.17.4"
         },
         {
           "type": "google fonts",
@@ -9966,15 +9961,15 @@
         "cache-control": "max-age=0, no-store, no-cache, must-revalidate",
         "content-length": "1200",
         "content-type": "text/html",
-        "date": "Sun, 31 Mar 2024 01:28:55 GMT",
+        "date": "Sun, 07 Apr 2024 01:29:21 GMT",
         "etag": "24b1dc6f10cd5e4b4dc93e4ecc55eafd",
         "last-modified": "Thu, 25 Jan 2024 10:28:33 GMT",
         "x-frame-options": "DENY",
-        "x-iplb-instance": "55974",
-        "x-iplb-request-id": "A2133558:0676_3626E64B:0050_6608BC57_F1776B69:4830",
-        "x-openstack-request-id": "tx5532912f3a6f47bc94a69-006608bc57",
+        "x-iplb-instance": "55976",
+        "x-iplb-request-id": "A2133558:5BA0_3626E64B:0050_6611F6F1_1A720ED2:6381",
+        "x-openstack-request-id": "tx0e368a31588841c780617-006611f6f1",
         "x-timestamp": "1706178512.81567",
-        "x-trans-id": "tx5532912f3a6f47bc94a69-006608bc57"
+        "x-trans-id": "tx0e368a31588841c780617-006611f6f1"
       },
       "endpoints": [
         {
@@ -10035,7 +10030,7 @@
         },
         {
           "hostname": "polyfill.io",
-          "ip": "104.18.51.3",
+          "ip": "104.18.52.27",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -10055,12 +10050,12 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "142.251.32.10",
+          "ip": "142.251.16.95",
           "geoip": {
             "city": {
-              "geoname_id": 5133273,
+              "geoname_id": 5116931,
               "names": {
-                "en": "Queens"
+                "en": "Farmingdale"
               }
             },
             "continent": {
@@ -10093,13 +10088,13 @@
             },
             "location": {
               "accuracy_radius": 500,
-              "latitude": 40.66,
-              "longitude": -73.839,
+              "latitude": 40.7306,
+              "longitude": -73.4313,
               "metro_code": 501,
               "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "11414"
+              "code": "11735"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -10247,7 +10242,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "172.217.0.163",
+          "ip": "172.253.122.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -10458,7 +10453,7 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.14.0",
-      "@generated": "Sun, 31 Mar 2024 01:31:42",
+      "@generated": "Sun, 7 Apr 2024 01:32:07",
       "site": [
         {
           "@name": "https://web-app.diagoriente.beta.gouv.fr",
@@ -10629,7 +10624,7 @@
         "type": "dns",
         "host": "web-app.diagoriente.beta.gouv.fr.",
         "matched-at": "web-app.diagoriente.beta.gouv.fr",
-        "timestamp": "2024-03-31T01:34:17.334067542Z",
+        "timestamp": "2024-04-07T01:34:11.352634844Z",
         "matcher-status": true
       },
       {
@@ -10656,85 +10651,11 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "extracted-results": [
-          "PUT, HEAD, POST, OPTIONS, GET, DELETE"
+          "HEAD, DELETE, PUT, OPTIONS, GET, POST"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:34:35.252605836Z",
+        "timestamp": "2024-04-07T01:34:32.42701236Z",
         "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.241919122Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.241980317Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
       {
@@ -10770,7 +10691,7 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.242000975Z",
+        "timestamp": "2024-04-07T01:36:45.024800214Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -10807,81 +10728,7 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.2420194Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.242035901Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.24205144Z",
+        "timestamp": "2024-04-07T01:36:45.024896014Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -10918,7 +10765,7 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.24206763Z",
+        "timestamp": "2024-04-07T01:36:45.024922885Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -10955,7 +10802,7 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.242085514Z",
+        "timestamp": "2024-04-07T01:36:45.024959563Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -10992,7 +10839,7 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.242101664Z",
+        "timestamp": "2024-04-07T01:36:45.024977106Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -11029,7 +10876,155 @@
         "host": "https://web-app.diagoriente.beta.gouv.fr",
         "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:36:28.242115139Z",
+        "timestamp": "2024-04-07T01:36:45.024992034Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "permissions-policy",
+        "type": "http",
+        "host": "https://web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:36:45.025007383Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-content-type-options",
+        "type": "http",
+        "host": "https://web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:36:45.025034063Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:36:45.025050644Z",
+        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
+        "matcher-status": true
+      },
+      {
+        "template": "http/misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+        "template-id": "http-missing-security-headers",
+        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass",
+            "jub0bs"
+          ],
+          "tags": [
+            "misconfig",
+            "headers",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 1
+          }
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "https://web-app.diagoriente.beta.gouv.fr",
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:36:45.025065873Z",
         "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr'",
         "matcher-status": true
       },
@@ -11066,7 +11061,7 @@
           "https://polyfill.io/v3/polyfill.min.js?features=default%2Ces7%2Ces6%2Ces5%2Ces2022%2Ces2021%2Ces2020%2Ces2018%2Ces2019%2Ces2017%2Ces2016%2Ces2015"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:37:17.460580276Z",
+        "timestamp": "2024-04-07T01:37:38.222738801Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Host: web-app.diagoriente.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://web-app.diagoriente.beta.gouv.fr/'",
         "matcher-status": true
       },
@@ -11097,7 +11092,7 @@
           "Let's Encrypt"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:56.934129305Z",
+        "timestamp": "2024-04-07T01:39:29.99575361Z",
         "matcher-status": true
       },
       {
@@ -11126,41 +11121,11 @@
         "extracted-results": [
           "cv.1jeune1solution.beta.gouv.fr",
           "orientation.1jeune1solution.beta.gouv.fr",
-          "web-app.diagoriente.beta.gouv.fr"
+          "web-app.diagoriente.beta.gouv.fr",
+          "cd93.diagoriente.beta.gouv.fr"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:56.93424984Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
-        "extracted-results": [
-          "tls10"
-        ],
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:57.005681922Z",
+        "timestamp": "2024-04-07T01:39:29.99586568Z",
         "matcher-status": true
       },
       {
@@ -11196,7 +11161,7 @@
           "[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:57.05233667Z",
+        "timestamp": "2024-04-07T01:39:30.148622326Z",
         "matcher-status": true
       },
       {
@@ -11224,46 +11189,10 @@
         "host": "web-app.diagoriente.beta.gouv.fr",
         "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
         "extracted-results": [
-          "tls11"
+          "tls10"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:57.65449941Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/weak-cipher-suites.yaml",
-        "template-url": "https://templates.nuclei.sh/public/weak-cipher-suites",
-        "template-id": "weak-cipher-suites",
-        "template-path": "/home/runner/nuclei-templates/ssl/weak-cipher-suites.yaml",
-        "info": {
-          "name": "Weak Cipher Suites Detection",
-          "author": [
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls",
-            "misconfig"
-          ],
-          "description": "A weak cipher is defined as an encryption/decryption algorithm that uses a key of insufficient length. Using an insufficient length for a key in an encryption/decryption algorithm opens up the possibility (or probability) that the encryption scheme could be broken.",
-          "reference": [
-            "https://www.acunetix.com/vulnerabilities/web/tls-ssl-weak-cipher-suites/",
-            "http://ciphersuite.info"
-          ],
-          "severity": "low",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "matcher-name": "tls-1.1",
-        "type": "ssl",
-        "host": "web-app.diagoriente.beta.gouv.fr",
-        "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
-        "extracted-results": [
-          "[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"
-        ],
-        "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:57.846630231Z",
+        "timestamp": "2024-04-07T01:39:30.228961565Z",
         "matcher-status": true
       },
       {
@@ -11299,7 +11228,43 @@
           "tls10"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:57.847631168Z",
+        "timestamp": "2024-04-07T01:39:30.381375971Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/weak-cipher-suites.yaml",
+        "template-url": "https://templates.nuclei.sh/public/weak-cipher-suites",
+        "template-id": "weak-cipher-suites",
+        "template-path": "/home/runner/nuclei-templates/ssl/weak-cipher-suites.yaml",
+        "info": {
+          "name": "Weak Cipher Suites Detection",
+          "author": [
+            "pussycat0x"
+          ],
+          "tags": [
+            "ssl",
+            "tls",
+            "misconfig"
+          ],
+          "description": "A weak cipher is defined as an encryption/decryption algorithm that uses a key of insufficient length. Using an insufficient length for a key in an encryption/decryption algorithm opens up the possibility (or probability) that the encryption scheme could be broken.",
+          "reference": [
+            "https://www.acunetix.com/vulnerabilities/web/tls-ssl-weak-cipher-suites/",
+            "http://ciphersuite.info"
+          ],
+          "severity": "low",
+          "metadata": {
+            "max-request": 4
+          }
+        },
+        "matcher-name": "tls-1.1",
+        "type": "ssl",
+        "host": "web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
+        "extracted-results": [
+          "[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"
+        ],
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:39:30.431191073Z",
         "matcher-status": true
       },
       {
@@ -11327,10 +11292,10 @@
         "host": "web-app.diagoriente.beta.gouv.fr",
         "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
         "extracted-results": [
-          "tls12"
+          "tls11"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:58.353159932Z",
+        "timestamp": "2024-04-07T01:39:30.544490443Z",
         "matcher-status": true
       },
       {
@@ -11366,7 +11331,38 @@
           "tls11"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:58.355173402Z",
+        "timestamp": "2024-04-07T01:39:31.053500401Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://templates.nuclei.sh/public/tls-version",
+        "template-id": "tls-version",
+        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+        "info": {
+          "name": "TLS Version - Detect",
+          "author": [
+            "pdteam",
+            "pussycat0x"
+          ],
+          "tags": [
+            "ssl",
+            "tls"
+          ],
+          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 4
+          }
+        },
+        "type": "ssl",
+        "host": "web-app.diagoriente.beta.gouv.fr",
+        "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
+        "extracted-results": [
+          "tls12"
+        ],
+        "ip": "135.125.83.158",
+        "timestamp": "2024-04-07T01:39:31.751284284Z",
         "matcher-status": true
       },
       {
@@ -11397,7 +11393,7 @@
           "tls13"
         ],
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:38:58.953642296Z",
+        "timestamp": "2024-04-07T01:39:32.235237025Z",
         "matcher-status": true
       },
       {
@@ -11434,7 +11430,7 @@
         "host": "web-app.diagoriente.beta.gouv.fr:443",
         "matched-at": "web-app.diagoriente.beta.gouv.fr:443",
         "ip": "135.125.83.158",
-        "timestamp": "2024-03-31T01:39:00.046254606Z",
+        "timestamp": "2024-04-07T01:39:34.026192102Z",
         "matcher-status": true
       }
     ],
@@ -11442,7 +11438,7 @@
       {
         "requestedUrl": "https://web-app.diagoriente.beta.gouv.fr/",
         "finalUrl": "https://web-app.diagoriente.beta.gouv.fr/",
-        "fetchTime": "2024-03-31T01:31:56.824Z",
+        "fetchTime": "2024-04-07T01:32:20.925Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -11453,7 +11449,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.9045886993408203
+            "score": 0.9046228408813477
           },
           "accessibility": {
             "title": "Accessibility",
@@ -11505,53 +11501,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 10115,
+            "numericValue": 9923,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 9054,
-                  "firstMeaningfulPaint": 9552,
-                  "largestContentfulPaint": 9632,
-                  "interactive": 10115,
-                  "speedIndex": 9054,
-                  "totalBlockingTime": 528,
-                  "maxPotentialFID": 578,
+                  "firstContentfulPaint": 2694,
+                  "firstMeaningfulPaint": 6559,
+                  "largestContentfulPaint": 9464,
+                  "interactive": 9923,
+                  "speedIndex": 6716,
+                  "totalBlockingTime": 372,
+                  "maxPotentialFID": 422,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 403338044,
+                  "observedTimeOriginTs": 367418738,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 403338044,
-                  "observedFirstPaint": 1316,
-                  "observedFirstPaintTs": 404654035,
-                  "observedFirstContentfulPaint": 1316,
-                  "observedFirstContentfulPaintTs": 404654035,
-                  "observedFirstContentfulPaintAllFrames": 1316,
-                  "observedFirstContentfulPaintAllFramesTs": 404654035,
-                  "observedFirstMeaningfulPaint": 1876,
-                  "observedFirstMeaningfulPaintTs": 405214470,
-                  "observedLargestContentfulPaint": 1316,
-                  "observedLargestContentfulPaintTs": 404654035,
-                  "observedLargestContentfulPaintAllFrames": 1316,
-                  "observedLargestContentfulPaintAllFramesTs": 404654035,
-                  "observedTraceEnd": 4788,
-                  "observedTraceEndTs": 408125584,
-                  "observedLoad": 1291,
-                  "observedLoadTs": 404628650,
-                  "observedDomContentLoaded": 1288,
-                  "observedDomContentLoadedTs": 404626340,
+                  "observedNavigationStartTs": 367418738,
+                  "observedFirstPaint": 1046,
+                  "observedFirstPaintTs": 368465127,
+                  "observedFirstContentfulPaint": 1046,
+                  "observedFirstContentfulPaintTs": 368465127,
+                  "observedFirstContentfulPaintAllFrames": 1046,
+                  "observedFirstContentfulPaintAllFramesTs": 368465127,
+                  "observedFirstMeaningfulPaint": 1472,
+                  "observedFirstMeaningfulPaintTs": 368890672,
+                  "observedLargestContentfulPaint": 1046,
+                  "observedLargestContentfulPaintTs": 368465127,
+                  "observedLargestContentfulPaintAllFrames": 1046,
+                  "observedLargestContentfulPaintAllFramesTs": 368465127,
+                  "observedTraceEnd": 4066,
+                  "observedTraceEndTs": 371484324,
+                  "observedLoad": 1017,
+                  "observedLoadTs": 368436203,
+                  "observedDomContentLoaded": 1017,
+                  "observedDomContentLoadedTs": 368435781,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 1329,
-                  "observedFirstVisualChangeTs": 404667044,
-                  "observedLastVisualChange": 4378,
-                  "observedLastVisualChangeTs": 407716044,
-                  "observedSpeedIndex": 1783,
-                  "observedSpeedIndexTs": 405121461
+                  "observedFirstVisualChange": 1049,
+                  "observedFirstVisualChangeTs": 368467738,
+                  "observedLastVisualChange": 3966,
+                  "observedLastVisualChangeTs": 371384738,
+                  "observedSpeedIndex": 1413,
+                  "observedSpeedIndexTs": 368831746
                 },
                 {
                   "lcpInvalidated": false
@@ -11569,23 +11565,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 21,
+                  "numRequests": 20,
                   "numScripts": 7,
                   "numStylesheets": 3,
                   "numFonts": 3,
-                  "numTasks": 377,
-                  "numTasksOver10ms": 1,
+                  "numTasks": 366,
+                  "numTasksOver10ms": 2,
                   "numTasksOver25ms": 1,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.5739999999999998,
-                  "throughput": 19938349.441134535,
-                  "maxRtt": 101.781,
-                  "maxServerLatency": 156.659,
-                  "totalByteWeight": 1548806,
-                  "totalTaskTime": 243.4939999999992,
-                  "mainDocumentTransferSize": 1542
+                  "rtt": 1.6440000000000001,
+                  "throughput": 24979264.95850885,
+                  "maxRtt": 81.46,
+                  "maxServerLatency": 481.8660000000001,
+                  "totalByteWeight": 1548627,
+                  "totalTaskTime": 206.4659999999995,
+                  "mainDocumentTransferSize": 1540
                 }
               ]
             }
@@ -11628,7 +11624,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://web-app.diagoriente.beta.gouv.fr",
-        "size": 1606.677,
+        "size": 1606.715,
         "nodes": 113,
         "requests": 24,
         "grade": "B",
@@ -11636,7 +11632,7 @@
         "ges": 1.4,
         "water": 2.1,
         "ecoindex_version": "5.4.2",
-        "date": "2024-03-31 01:30:00.827656",
+        "date": "2024-04-07 01:30:25.812798",
         "page_type": null
       }
     ],
@@ -11650,15 +11646,15 @@
       "uptime": 100,
       "uptimeGrade": "A",
       "testsslExpireSoon": false,
-      "testsslExpireDate": "2024-06-23T12:11:00.000Z",
+      "testsslExpireDate": "2024-06-28T12:11:00.000Z",
       "testsslGrade": "B",
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "F",
-      "trackersCount": 12,
+      "trackersCount": 13,
       "zapCount": 8,
       "zapGrade": "D",
-      "lighthouse_performance": 0.9045886993408203,
+      "lighthouse_performance": 0.9046228408813477,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.92,
       "lighthouse_accessibilityGrade": "A",
