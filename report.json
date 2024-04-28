@@ -8477,7 +8477,7 @@
       "httpGrade": "B+",
       "uptime": 100,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2024-05-21T10:34:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "A",
