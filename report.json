@@ -2743,7 +2743,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.4303627014160156
+            "score": 0.67
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2953,8 +2953,8 @@
       "trackersCount": 3,
       "zapCount": 7,
       "zapGrade": "D",
-      "lighthouse_performance": 0.4303627014160156,
-      "lighthouse_performanceGrade": "D",
+      "lighthouse_performance": 0.67,
+      "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.91,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 1,
@@ -5590,7 +5590,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 1
+            "score": 0.53
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5802,8 +5802,8 @@
       "trackersCount": 10,
       "zapCount": 5,
       "zapGrade": "D",
-      "lighthouse_performance": 1,
-      "lighthouse_performanceGrade": "A",
+      "lighthouse_performance": 0.53,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.97,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.92,
@@ -8275,7 +8275,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.9055797576904296
+            "score": 0.54
           },
           "accessibility": {
             "title": "Accessibility",
@@ -8486,8 +8486,8 @@
       "trackersCount": 1,
       "zapCount": 6,
       "zapGrade": "D",
-      "lighthouse_performance": 0.9055797576904296,
-      "lighthouse_performanceGrade": "A",
+      "lighthouse_performance": 0.54,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.88,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.92,
@@ -11449,7 +11449,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.9046228408813477
+            "score": 0.49
           },
           "accessibility": {
             "title": "Accessibility",
@@ -11654,8 +11654,8 @@
       "trackersCount": 13,
       "zapCount": 8,
       "zapGrade": "D",
-      "lighthouse_performance": 0.9046228408813477,
-      "lighthouse_performanceGrade": "A",
+      "lighthouse_performance": 0.49,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.92,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 1,
