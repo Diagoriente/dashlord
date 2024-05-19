@@ -2944,7 +2944,7 @@
       "httpGrade": "B+",
       "uptime": 100,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2024-06-16T12:58:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "B",
