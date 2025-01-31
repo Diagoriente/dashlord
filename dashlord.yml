@@ -33,9 +33,3 @@ urls:
   - url: https://plateforme.diagoriente.beta.gouv.fr
     tools:
       dsfr: false
-  - url: https://app.diagoriente.beta.gouv.fr
-    tools:
-      dsfr: false
-  - url: https://web-app.diagoriente.beta.gouv.fr
-    tools:
-      dsfr: false
